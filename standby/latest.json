@@ -1,0 +1,11 @@
+{
+  "app": "standby",
+  "version": "0.2.0",
+  "notes": "StandBy now updates itself: StandBy › Check for Updates… downloads just the new code, never during a show. Go Back to Previous Version undoes an update.",
+  "file": "StandBy-0.2.0.sbupdate",
+  "sha256": "eb515b2bdcf460f5fd52857d74daca3cd1c4b9f8ac441bf7b729ebc29d259063",
+  "size": 3799448,
+  "released": "2026-09-23T23:25:08.395Z",
+  "minShell": "0.2.0",
+  "sig": "z2YGGDvQAsZjqrv8bn8AKzIeQbwX+Ju/OXbzLglgIbfOFFZezljIDobEJ81CJQyCeGimUg8OYgkfDOIYlZp4CQ=="
+}

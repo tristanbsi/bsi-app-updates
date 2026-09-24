@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.9",
-  "notes": "New: Help › StandBy Manual (⇧⌘/) opens the full manual in its own window, with search and the changelog. It's updated with every release.",
-  "file": "StandBy-0.2.9.sbupdate",
-  "sha256": "db3887da4c612d3cbd9242489a35b4e5b921b4149cadabed5180967c3899975f",
-  "size": 3991585,
-  "released": "2026-09-24T18:35:11.723Z",
+  "version": "0.2.10",
+  "notes": "Fixed: the prompter's list of shows on the network showed shows that were long gone, sometimes several at the caller's address, so linking could fail. Update both the caller and the prompter Mac.",
+  "file": "StandBy-0.2.10.sbupdate",
+  "sha256": "0a6633b1113a5a4fefad2a506adba3f0b9e3a13fbb25e1b3ccd7307988af81c7",
+  "size": 3993105,
+  "released": "2026-09-24T18:41:36.104Z",
   "minShell": "0.2.0",
-  "sig": "Ky2FRnADFFsvmOJTB/9PMaRZT46BBeQ9K7/eUS2KTX5lPU2YVG0/TDepYm1wehg/nvCQNa8XXoJY40boLHK9Cw=="
+  "sig": "sF4GRJ1O9rYZ2Fmrp9sbW1BPosNKQtZJdqyA2zRf0CiK1QNyFDUeD8f59LkSq0eRXgTgVg2gaXYOV+2QqKoWAQ=="
 }

@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.13",
-  "notes": "Smaller updates: each one now carries only what StandBy runs. Nothing changes in how it works.",
-  "file": "StandBy-0.2.13.sbupdate",
-  "sha256": "1c850a16dc1b6934afb41a1ed40dc9dac14301dccaa0799e39bd781168b46971",
-  "size": 683829,
-  "released": "2026-09-24T19:44:37.201Z",
+  "version": "0.2.14",
+  "notes": "Green banners on the caller (snapshot saved and the like) now close by themselves after 8 seconds, with a bar showing the time left. Red ones stay until OK.",
+  "file": "StandBy-0.2.14.sbupdate",
+  "sha256": "66b3cc6919daa1fc94fa9355b035b3e54e25f18eae700897ab32f02ccf7f7c73",
+  "size": 684455,
+  "released": "2026-09-24T19:49:59.957Z",
   "minShell": "0.2.0",
-  "sig": "o/n2RZiioKjSWk4L6W4w/g5lpUbmEUqEAjm8Cq8AJcIrySVGvlBlb0Z1/P7mOw3zrsVcNOOA0yXtdkCCppbUDQ=="
+  "sig": "0JXU2P6nE1OdyfAOgnEZng6NRKrmuONTIgwEJMGu0auQzd5dPjV83190QDP+k3ZjjsQI2+5AE3lM9KuUbryKCg=="
 }

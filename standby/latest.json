@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.5",
-  "notes": "Arrange display screens: move, size and hide each part of a /display, on the screen itself or from View › Arrange Display Screens… (or /screens on any laptop). The speaker timer on the prompter can be resized by dragging its corner or scrolling (up to 4×).",
-  "file": "StandBy-0.2.5.sbupdate",
-  "sha256": "959f8fec2c5df367fda9235be681251ea674f6203e9a51e8c4923659eb86eb49",
-  "size": 3968937,
-  "released": "2026-09-24T17:39:47.031Z",
+  "version": "0.2.6",
+  "notes": "Fixes cue jumps (Companion, keys and the Jump buttons) landing in the wrong place further down a script. The prompter preview now always matches the talent screen: it uses the saved look from launch, and its shape follows the talent display.",
+  "file": "StandBy-0.2.6.sbupdate",
+  "sha256": "999d7adbc78a6ac9cef4402d2cd66a4b4b68268cd9e6ae22a6a44d40ccc1030a",
+  "size": 3969343,
+  "released": "2026-09-24T18:00:06.519Z",
   "minShell": "0.2.0",
-  "sig": "lNLY2ZA/Mrqzp8+Ix/w1zQ40HD2UcKfgwKB2+N+XOr/zmEe+wRl/eDl4ebthN/QVYc+lXPL4qJYZLuhJ8JGGCw=="
+  "sig": "GlxhiRPuBmDIaxrgZjMF4p+foemINPwsZXec08VGUnDuJXNgbJMkE6H1K/ZXp2NTPOTsEI84umRYPqlj7u1wBQ=="
 }

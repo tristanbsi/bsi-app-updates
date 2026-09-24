@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.2.1",
-  "notes": "Pack the rest keeps stacked cases braced (tall solid cases beside and behind them), and each case can say which side it tips onto.",
-  "file": "Loader-0.2.1.ldupdate",
-  "sha256": "2b099d836be7935a49c68ade4211d9a7311a7e7267ab9cf2ac2c77ed99941941",
-  "size": 678466,
-  "released": "2026-09-24T23:23:22.247Z",
+  "version": "0.2.2",
+  "notes": "200, 300 and 350 cases only tip the tall way, onto their end.",
+  "file": "Loader-0.2.2.ldupdate",
+  "sha256": "378e922fc625c2259b5aacb87fd7bb7e5b03c9b40ed0d1327d1183a6e71985d1",
+  "size": 678682,
+  "released": "2026-09-24T23:30:18.193Z",
   "minShell": "0.1.0",
-  "sig": "sq/ucd1MFVwV8esCPHxTmPxVjEqgyCS13tPZACz5jdy8KjMkt2FZuXeDSe2MftAw8L0GQ3eT6o59RspI6BtBBw=="
+  "sig": "e37054NOMSfKxuU9a0q4MYr07FMZC+tdu2WgMVU67+D1pFgD/LRxcC/GLFgoP5Duou0DknTg93a8dYSf6u+5DQ=="
 }

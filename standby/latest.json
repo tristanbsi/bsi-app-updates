@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.14",
-  "notes": "Green banners on the caller (snapshot saved and the like) now close by themselves after 8 seconds, with a bar showing the time left. Red ones stay until OK.",
-  "file": "StandBy-0.2.14.sbupdate",
-  "sha256": "66b3cc6919daa1fc94fa9355b035b3e54e25f18eae700897ab32f02ccf7f7c73",
-  "size": 684455,
-  "released": "2026-09-24T19:49:59.957Z",
+  "version": "0.2.15",
+  "notes": "Fixed: a broken link or a malformed message from someone on the network could freeze the caller behind an error box until OK. Also new: a show-Mac benchmark (StandBy Benchmark folder on Drive).",
+  "file": "StandBy-0.2.15.sbupdate",
+  "sha256": "33d48c45b4d47d68c73ee17bf53403dd896b820f74f9790af0307176c3893ffc",
+  "size": 685517,
+  "released": "2026-09-24T22:16:00.906Z",
   "minShell": "0.2.0",
-  "sig": "0JXU2P6nE1OdyfAOgnEZng6NRKrmuONTIgwEJMGu0auQzd5dPjV83190QDP+k3ZjjsQI2+5AE3lM9KuUbryKCg=="
+  "sig": "A7NvvFQPH61u5C4nGFRNZXFH+VAYj1EehUWDLgUrLkc8WFA4f+q2Om56e0AGXcNjSjAT+gd8qGpW8hNsDuzsBw=="
 }

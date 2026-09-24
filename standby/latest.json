@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.4",
-  "notes": "Prompter cue marks are now ⟦12⟧ and ⟪1⟫, so a script's own [brackets] and {braces} stay words (old scripts convert once). The colour dots show your recent colours. Controller keys are kept for the whole Mac. Companion can connect straight to a prompter (StandBy › Companion Remote…, port 8081). Companion module 1.0.3: re-import it from StandBy › Save Companion Module to Downloads.",
-  "file": "StandBy-0.2.4.sbupdate",
-  "sha256": "0bf029b0c4920bb74a91649db10dc7c7db7d1375e2ca93769d7ad3a37e2fa9fb",
-  "size": 3952524,
-  "released": "2026-09-24T16:06:45.255Z",
+  "version": "0.2.5",
+  "notes": "Arrange display screens: move, size and hide each part of a /display, on the screen itself or from View › Arrange Display Screens… (or /screens on any laptop). The speaker timer on the prompter can be resized by dragging its corner or scrolling (up to 4×).",
+  "file": "StandBy-0.2.5.sbupdate",
+  "sha256": "959f8fec2c5df367fda9235be681251ea674f6203e9a51e8c4923659eb86eb49",
+  "size": 3968937,
+  "released": "2026-09-24T17:39:47.031Z",
   "minShell": "0.2.0",
-  "sig": "NnGki5yx8ejXBYI8x3dyMKoMUcpq+Edr7Y7ZOxUDUJMyDV6vP/5tweB0TAXHy/A3jxBaoLfloPsUb5SE3w0TBw=="
+  "sig": "lNLY2ZA/Mrqzp8+Ix/w1zQ40HD2UcKfgwKB2+N+XOr/zmEe+wRl/eDl4ebthN/QVYc+lXPL4qJYZLuhJ8JGGCw=="
 }

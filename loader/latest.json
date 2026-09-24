@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.2.0",
-  "notes": "Pack order (what goes in first), saved rows packed whole, and Pack the rest: a first automatic pass. Show or Hide Case Names no longer prints labels.",
-  "file": "Loader-0.2.0.ldupdate",
-  "sha256": "507c6e918674ea1359430f9164898b4049514575fac1db894278942ec8c3016b",
-  "size": 675512,
-  "released": "2026-09-24T23:10:24.371Z",
+  "version": "0.2.1",
+  "notes": "Pack the rest keeps stacked cases braced (tall solid cases beside and behind them), and each case can say which side it tips onto.",
+  "file": "Loader-0.2.1.ldupdate",
+  "sha256": "2b099d836be7935a49c68ade4211d9a7311a7e7267ab9cf2ac2c77ed99941941",
+  "size": 678466,
+  "released": "2026-09-24T23:23:22.247Z",
   "minShell": "0.1.0",
-  "sig": "BVfcDCkfRfBGTJOCKPhA+UgvgRxkTfF1w5J4pQw/Yiasf4zFLV8+ZWnCchK2MKxKc4NkUOxO5Cgau8gXC6c4Cw=="
+  "sig": "sq/ucd1MFVwV8esCPHxTmPxVjEqgyCS13tPZACz5jdy8KjMkt2FZuXeDSe2MftAw8L0GQ3eT6o59RspI6BtBBw=="
 }

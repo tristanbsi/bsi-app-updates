@@ -10,6 +10,8 @@ patchmap/latest.json          newest PatchMap release: version, notes, file, sha
 patchmap/PatchMap-X.Y.Z.pmupdate
 standby/latest.json
 standby/StandBy-X.Y.Z.sbupdate
+loader/latest.json
+loader/Loader-X.Y.Z.ldupdate
 client/updater.js             the checker built into each app (copied out with tools/sync-client.js)
 tools/publish.js              signs a package and adds it as the latest release
 ```
@@ -31,6 +33,10 @@ node tools/publish.js patchmap ~/patchmap/dist/PatchMap-X.Y.Z.pmupdate
 # StandBy: bump host/package.json version, then in ~/bsi-showcall-app/host
 STANDBY_OUT=dist-release npm run package && npm run update-package -- "What changed, in one or two sentences."
 node tools/publish.js standby ~/bsi-showcall-app/host/dist-updates/StandBy-X.Y.Z.sbupdate
+
+# Loader: bump package.json version, then in ~/loader (or its worktree)
+npm run package && npm run update-package -- "What changed, in one or two sentences."
+node tools/publish.js loader ~/loader/dist-updates/Loader-X.Y.Z.ldupdate
 
 git push     # this is the moment the apps can see it
 ```

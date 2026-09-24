@@ -1,0 +1,11 @@
+{
+  "app": "loader",
+  "version": "0.1.9",
+  "notes": "Send Pack Numbers reads the shop order again first, so a fresh order's line IDs go with it.",
+  "file": "Loader-0.1.9.ldupdate",
+  "sha256": "d484d851d83ab90d8f614bc48c71becc9167364570084d2cbe610f733e583b9c",
+  "size": 667827,
+  "released": "2026-09-24T22:13:49.291Z",
+  "minShell": "0.1.0",
+  "sig": "slxoF3x5wlaHIytB5/CenAoGhF7vIOm8JDlkSNwmwrStg0iFQY1bSj8InG7FqVKlBFmtV3gyNZiggaQ1DrwWCA=="
+}

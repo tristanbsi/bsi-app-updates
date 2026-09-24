@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.1",
-  "notes": "StandBy asks Caller, Prompter or Both on every launch (Both runs the two side by side on one Mac; StandBy › Open a Prompter Too adds one later). Help guides have a Don't show this again box that's remembered. New headset icon, and the prompter has its own Dock icon.",
-  "file": "StandBy-0.2.1.sbupdate",
-  "sha256": "d870bf8bae81bc84d910e197c69639b88c6ba59000cafcf91baad3ba5f8ead7d",
-  "size": 3874816,
-  "released": "2026-09-24T14:42:17.363Z",
+  "version": "0.2.2",
+  "notes": "New: StandBy › Save Companion Module to Downloads puts the Companion module file in your Downloads, ready to import into Companion.",
+  "file": "StandBy-0.2.2.sbupdate",
+  "sha256": "38754fce22ef6a5e69eb820586446d665911d9791d4560cba92db4f11cf337ab",
+  "size": 3941906,
+  "released": "2026-09-24T15:10:02.673Z",
   "minShell": "0.2.0",
-  "sig": "N2bl8ZI7hpMZsq+pd+cDUTZ38ZJda1Qg6otUFujWfuhgFKGDVxMvGSNIBvNLeN4j00+guysrLe489u1sgQuhCQ=="
+  "sig": "rsnWb7/K4txh4SEYwd5wWfSHxa5iAq7dsVm5LTzC7wOoHdOm2SThCf+y/lAl08zfkOnTyoRWkIjkDxGAp+qLBg=="
 }

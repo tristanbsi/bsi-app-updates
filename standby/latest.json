@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.10",
-  "notes": "Fixed: the prompter's list of shows on the network showed shows that were long gone, sometimes several at the caller's address, so linking could fail. Update both the caller and the prompter Mac.",
-  "file": "StandBy-0.2.10.sbupdate",
-  "sha256": "0a6633b1113a5a4fefad2a506adba3f0b9e3a13fbb25e1b3ccd7307988af81c7",
-  "size": 3993105,
-  "released": "2026-09-24T18:41:36.104Z",
+  "version": "0.2.11",
+  "notes": "Fixed: on some Macs, macOS silently stopped StandBy reaching the other StandBy Macs and never asked for permission (StandBy missing under Privacy & Security › Local Network). On a Mac with that problem, install the new StandBy download from Drive; updating alone isn't enough there.",
+  "file": "StandBy-0.2.11.sbupdate",
+  "sha256": "d5b869abfb746fbf25c94841c87b2ed35b5cec7662b101ba00d1ddb8d019907f",
+  "size": 3993460,
+  "released": "2026-09-24T18:53:56.781Z",
   "minShell": "0.2.0",
-  "sig": "sF4GRJ1O9rYZ2Fmrp9sbW1BPosNKQtZJdqyA2zRf0CiK1QNyFDUeD8f59LkSq0eRXgTgVg2gaXYOV+2QqKoWAQ=="
+  "sig": "1VJ2nAlWkhTnCIUSz8C7JArQa6CgALJyTUhM6nZhNRNPVJh+EJDe/yfEVpMOzHi1C9yXEDdRciwKogd7h11RAA=="
 }

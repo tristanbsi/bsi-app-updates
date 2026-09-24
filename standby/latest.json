@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.12",
-  "notes": "The prompter now shows a caller it can see but can't reach (greyed, with what to check) instead of leaving it out. Fixed: the script's scrollbar covered the gold editing border.",
-  "file": "StandBy-0.2.12.sbupdate",
-  "sha256": "22c6151c6e576a36e3fc92f756b92ed1d9123264fd26530f61563fb446cf996b",
-  "size": 3994364,
-  "released": "2026-09-24T19:09:27.826Z",
+  "version": "0.2.13",
+  "notes": "Smaller updates: each one now carries only what StandBy runs. Nothing changes in how it works.",
+  "file": "StandBy-0.2.13.sbupdate",
+  "sha256": "1c850a16dc1b6934afb41a1ed40dc9dac14301dccaa0799e39bd781168b46971",
+  "size": 683829,
+  "released": "2026-09-24T19:44:37.201Z",
   "minShell": "0.2.0",
-  "sig": "nzoHe0W++pbSUMiatisBmDsbUm49Ne7tAPXBBYO75yHpxZOzrmxs9j1GCkTBYf6An5nzp0BPdxmaB9pbOHYpCQ=="
+  "sig": "o/n2RZiioKjSWk4L6W4w/g5lpUbmEUqEAjm8Cq8AJcIrySVGvlBlb0Z1/P7mOw3zrsVcNOOA0yXtdkCCppbUDQ=="
 }

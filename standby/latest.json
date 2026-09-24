@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.3",
-  "notes": "Help › Send Feedback… sends your thoughts straight to Tristan. In the prompter, Screen shape (under Talent screen) lets the talent screen fill a 16:9 or 16:10 downstage monitor.",
-  "file": "StandBy-0.2.3.sbupdate",
-  "sha256": "ecaa9a2bb1e90bac1702cc183d42205aa05efe62de2a7a6657e6c4de7a58dc2a",
-  "size": 3947728,
-  "released": "2026-09-24T15:32:49.482Z",
+  "version": "0.2.4",
+  "notes": "Prompter cue marks are now ⟦12⟧ and ⟪1⟫, so a script's own [brackets] and {braces} stay words (old scripts convert once). The colour dots show your recent colours. Controller keys are kept for the whole Mac. Companion can connect straight to a prompter (StandBy › Companion Remote…, port 8081). Companion module 1.0.3: re-import it from StandBy › Save Companion Module to Downloads.",
+  "file": "StandBy-0.2.4.sbupdate",
+  "sha256": "0bf029b0c4920bb74a91649db10dc7c7db7d1375e2ca93769d7ad3a37e2fa9fb",
+  "size": 3952524,
+  "released": "2026-09-24T16:06:45.255Z",
   "minShell": "0.2.0",
-  "sig": "Ygi1xB++eAiwRFjuqIWj97efdxZdlaxTnVtfTvJmOXsky/9sPI4CPpgFAUgz6VCrWWAefyOZ+cXCaPWo7Y2eDA=="
+  "sig": "NnGki5yx8ejXBYI8x3dyMKoMUcpq+Edr7Y7ZOxUDUJMyDV6vP/5tweB0TAXHy/A3jxBaoLfloPsUb5SE3w0TBw=="
 }

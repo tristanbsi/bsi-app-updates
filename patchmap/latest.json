@@ -1,10 +1,10 @@
 {
   "app": "patchmap",
-  "version": "1.11.0",
-  "notes": "PatchMap now updates itself: PatchMap › Check for Updates… (it also checks quietly at launch) downloads just the new code, with no reinstall. Go Back to Previous Version returns to the version you had before, not the original built-in one.",
-  "file": "PatchMap-1.11.0.pmupdate",
-  "sha256": "d16d33ac1f757529a8cfc4cacde8ba3047677b908dabb5c6071253df56d1897b",
-  "size": 830078,
-  "released": "2026-09-23T23:16:35.685Z",
-  "sig": "uCWYXw8Zc4ob2m06g9t0LsC9JEcHCYwcuV1oj/R23rz9jKs+19rNOjCQeQXuoo3qJj9x23pX6P2IvX1DrC7iCw=="
+  "version": "1.12.0",
+  "notes": "Help › Send Feedback… sends what’s working, what isn’t or what you’d like straight to Tristan.",
+  "file": "PatchMap-1.12.0.pmupdate",
+  "sha256": "a5ac642adff3bfe44234499a6546a34220fb35b085538f0824e705bf36783066",
+  "size": 834754,
+  "released": "2026-09-24T15:32:49.386Z",
+  "sig": "jWadQIinWQmiFF+RHZY+PArdnlcYeV7rjm5skCg/ixS5+lZj/fpHFNiO5087BNW6eCg4r+WrvY/KEusVheNYAQ=="
 }

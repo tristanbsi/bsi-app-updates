@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.11",
-  "notes": "Fixed: on some Macs, macOS silently stopped StandBy reaching the other StandBy Macs and never asked for permission (StandBy missing under Privacy & Security › Local Network). On a Mac with that problem, install the new StandBy download from Drive; updating alone isn't enough there.",
-  "file": "StandBy-0.2.11.sbupdate",
-  "sha256": "d5b869abfb746fbf25c94841c87b2ed35b5cec7662b101ba00d1ddb8d019907f",
-  "size": 3993460,
-  "released": "2026-09-24T18:53:56.781Z",
+  "version": "0.2.12",
+  "notes": "The prompter now shows a caller it can see but can't reach (greyed, with what to check) instead of leaving it out. Fixed: the script's scrollbar covered the gold editing border.",
+  "file": "StandBy-0.2.12.sbupdate",
+  "sha256": "22c6151c6e576a36e3fc92f756b92ed1d9123264fd26530f61563fb446cf996b",
+  "size": 3994364,
+  "released": "2026-09-24T19:09:27.826Z",
   "minShell": "0.2.0",
-  "sig": "1VJ2nAlWkhTnCIUSz8C7JArQa6CgALJyTUhM6nZhNRNPVJh+EJDe/yfEVpMOzHi1C9yXEDdRciwKogd7h11RAA=="
+  "sig": "nzoHe0W++pbSUMiatisBmDsbUm49Ne7tAPXBBYO75yHpxZOzrmxs9j1GCkTBYf6An5nzp0BPdxmaB9pbOHYpCQ=="
 }

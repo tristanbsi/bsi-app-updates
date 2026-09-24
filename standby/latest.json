@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.8",
-  "notes": "Practice works in Show mode: from More › Practice or Companion, and turning Show mode on no longer ends it. The talent screen is never affected.",
-  "file": "StandBy-0.2.8.sbupdate",
-  "sha256": "1d664550990398c8bbaf8bd807e8172703f487ae288b6704d723d13193e5b561",
-  "size": 3970391,
-  "released": "2026-09-24T18:21:09.009Z",
+  "version": "0.2.9",
+  "notes": "New: Help › StandBy Manual (⇧⌘/) opens the full manual in its own window, with search and the changelog. It's updated with every release.",
+  "file": "StandBy-0.2.9.sbupdate",
+  "sha256": "db3887da4c612d3cbd9242489a35b4e5b921b4149cadabed5180967c3899975f",
+  "size": 3991585,
+  "released": "2026-09-24T18:35:11.723Z",
   "minShell": "0.2.0",
-  "sig": "wq8ftSCDLZmOc+kqeBsdH5VHzPRcq/NZ8HfGm9BT0yCb/W+FAUd9DoaFh1A5ziiH17NzaVb/wHqHMqmq2zaVBw=="
+  "sig": "Ky2FRnADFFsvmOJTB/9PMaRZT46BBeQ9K7/eUS2KTX5lPU2YVG0/TDepYm1wehg/nvCQNa8XXoJY40boLHK9Cw=="
 }

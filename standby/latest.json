@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.7",
-  "notes": "Companion module 1.0.4 is inside (StandBy › Save Companion Module to Downloads, then import it in Companion): a Pace button (manual / rehearsal), and speaker timer size (bigger, smaller, or set).",
-  "file": "StandBy-0.2.7.sbupdate",
-  "sha256": "ff4bde861c1c914fc86e55bed9fd73a7f5bf659c051be14fd48f0e7708dc8e94",
-  "size": 3970406,
-  "released": "2026-09-24T18:14:20.060Z",
+  "version": "0.2.8",
+  "notes": "Practice works in Show mode: from More › Practice or Companion, and turning Show mode on no longer ends it. The talent screen is never affected.",
+  "file": "StandBy-0.2.8.sbupdate",
+  "sha256": "1d664550990398c8bbaf8bd807e8172703f487ae288b6704d723d13193e5b561",
+  "size": 3970391,
+  "released": "2026-09-24T18:21:09.009Z",
   "minShell": "0.2.0",
-  "sig": "5qqpcLbW1E/xmYlnEBjoFqr6kcrIabolt6cXuICOLzN39h77lIr1XYLO26GdJISiLoxsE58Y3Eq5887ikJXjBA=="
+  "sig": "wq8ftSCDLZmOc+kqeBsdH5VHzPRcq/NZ8HfGm9BT0yCb/W+FAUd9DoaFh1A5ziiH17NzaVb/wHqHMqmq2zaVBw=="
 }

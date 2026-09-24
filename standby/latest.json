@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.6",
-  "notes": "Fixes cue jumps (Companion, keys and the Jump buttons) landing in the wrong place further down a script. The prompter preview now always matches the talent screen: it uses the saved look from launch, and its shape follows the talent display.",
-  "file": "StandBy-0.2.6.sbupdate",
-  "sha256": "999d7adbc78a6ac9cef4402d2cd66a4b4b68268cd9e6ae22a6a44d40ccc1030a",
-  "size": 3969343,
-  "released": "2026-09-24T18:00:06.519Z",
+  "version": "0.2.7",
+  "notes": "Companion module 1.0.4 is inside (StandBy › Save Companion Module to Downloads, then import it in Companion): a Pace button (manual / rehearsal), and speaker timer size (bigger, smaller, or set).",
+  "file": "StandBy-0.2.7.sbupdate",
+  "sha256": "ff4bde861c1c914fc86e55bed9fd73a7f5bf659c051be14fd48f0e7708dc8e94",
+  "size": 3970406,
+  "released": "2026-09-24T18:14:20.060Z",
   "minShell": "0.2.0",
-  "sig": "GlxhiRPuBmDIaxrgZjMF4p+foemINPwsZXec08VGUnDuJXNgbJMkE6H1K/ZXp2NTPOTsEI84umRYPqlj7u1wBQ=="
+  "sig": "5qqpcLbW1E/xmYlnEBjoFqr6kcrIabolt6cXuICOLzN39h77lIr1XYLO26GdJISiLoxsE58Y3Eq5887ikJXjBA=="
 }

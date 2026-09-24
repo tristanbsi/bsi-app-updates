@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.1.10",
-  "notes": "Pack labels take the gig's tape color (the shop order's Pull Color) and name it in the footer.",
-  "file": "Loader-0.1.10.ldupdate",
-  "sha256": "ca58f0a58729963dc1df08ded61414f1cbbb011066c47e825ce2cd1c5181d2e7",
-  "size": 668721,
-  "released": "2026-09-24T22:17:36.640Z",
+  "version": "0.2.0",
+  "notes": "Pack order (what goes in first), saved rows packed whole, and Pack the rest: a first automatic pass. Show or Hide Case Names no longer prints labels.",
+  "file": "Loader-0.2.0.ldupdate",
+  "sha256": "507c6e918674ea1359430f9164898b4049514575fac1db894278942ec8c3016b",
+  "size": 675512,
+  "released": "2026-09-24T23:10:24.371Z",
   "minShell": "0.1.0",
-  "sig": "7Mtr1x+YC7TU7eKG0HomqG8quHArO/jUjOk6BjDZl666JfC5nEseRsjP0HIVJ03lrk/C2Tu/J3GgiGeB/uJYCA=="
+  "sig": "BVfcDCkfRfBGTJOCKPhA+UgvgRxkTfF1w5J4pQw/Yiasf4zFLV8+ZWnCchK2MKxKc4NkUOxO5Cgau8gXC6c4Cw=="
 }

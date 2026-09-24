@@ -1,10 +1,10 @@
 {
   "app": "patchmap",
-  "version": "1.12.0",
-  "notes": "Help › Send Feedback… sends what’s working, what isn’t or what you’d like straight to Tristan.",
-  "file": "PatchMap-1.12.0.pmupdate",
-  "sha256": "a5ac642adff3bfe44234499a6546a34220fb35b085538f0824e705bf36783066",
-  "size": 834754,
-  "released": "2026-09-24T15:32:49.386Z",
-  "sig": "jWadQIinWQmiFF+RHZY+PArdnlcYeV7rjm5skCg/ixS5+lZj/fpHFNiO5087BNW6eCg4r+WrvY/KEusVheNYAQ=="
+  "version": "1.14.0",
+  "notes": "New: the PatchMap Manual (Help › PatchMap Manual, ⇧⌘/) opens in its own window with every feature explained and a list of what's changed. Also in this update: zoomed out, the schematic shows device names (zoom in for ports); Find (⌘F); Redo (⇧⌘Z); Delete asks first when gear still has cables; dashed power, dotted USB and double-line fibre with a Key button; a calmer top bar with a saved indicator; a rig summary panel; one line per cable on the patch sheet.",
+  "file": "PatchMap-1.14.0.pmupdate",
+  "sha256": "4782c3c28958d0d1663afda38142301c8bb17ea63fbfc786ad344ce977bc9a22",
+  "size": 854769,
+  "released": "2026-09-24T18:34:48.192Z",
+  "sig": "yHhXOXydq8gG4yE0qnmdpK5kBE1/CjqIQOjbjs4Eq/G31q3DAVWCe/ERXfjDBygPCH7MHGpvGmOeoyrwl5ENCA=="
 }

@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.0",
-  "notes": "StandBy now updates itself: StandBy › Check for Updates… downloads just the new code, never during a show. Go Back to Previous Version undoes an update.",
-  "file": "StandBy-0.2.0.sbupdate",
-  "sha256": "eb515b2bdcf460f5fd52857d74daca3cd1c4b9f8ac441bf7b729ebc29d259063",
-  "size": 3799448,
-  "released": "2026-09-23T23:25:08.395Z",
+  "version": "0.2.1",
+  "notes": "StandBy asks Caller, Prompter or Both on every launch (Both runs the two side by side on one Mac; StandBy › Open a Prompter Too adds one later). Help guides have a Don't show this again box that's remembered. New headset icon, and the prompter has its own Dock icon.",
+  "file": "StandBy-0.2.1.sbupdate",
+  "sha256": "d870bf8bae81bc84d910e197c69639b88c6ba59000cafcf91baad3ba5f8ead7d",
+  "size": 3874816,
+  "released": "2026-09-24T14:42:17.363Z",
   "minShell": "0.2.0",
-  "sig": "z2YGGDvQAsZjqrv8bn8AKzIeQbwX+Ju/OXbzLglgIbfOFFZezljIDobEJ81CJQyCeGimUg8OYgkfDOIYlZp4CQ=="
+  "sig": "N2bl8ZI7hpMZsq+pd+cDUTZ38ZJda1Qg6otUFujWfuhgFKGDVxMvGSNIBvNLeN4j00+guysrLe489u1sgQuhCQ=="
 }

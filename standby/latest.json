@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.2",
-  "notes": "New: StandBy › Save Companion Module to Downloads puts the Companion module file in your Downloads, ready to import into Companion.",
-  "file": "StandBy-0.2.2.sbupdate",
-  "sha256": "38754fce22ef6a5e69eb820586446d665911d9791d4560cba92db4f11cf337ab",
-  "size": 3941906,
-  "released": "2026-09-24T15:10:02.673Z",
+  "version": "0.2.3",
+  "notes": "Help › Send Feedback… sends your thoughts straight to Tristan. In the prompter, Screen shape (under Talent screen) lets the talent screen fill a 16:9 or 16:10 downstage monitor.",
+  "file": "StandBy-0.2.3.sbupdate",
+  "sha256": "ecaa9a2bb1e90bac1702cc183d42205aa05efe62de2a7a6657e6c4de7a58dc2a",
+  "size": 3947728,
+  "released": "2026-09-24T15:32:49.482Z",
   "minShell": "0.2.0",
-  "sig": "rsnWb7/K4txh4SEYwd5wWfSHxa5iAq7dsVm5LTzC7wOoHdOm2SThCf+y/lAl08zfkOnTyoRWkIjkDxGAp+qLBg=="
+  "sig": "Ygi1xB++eAiwRFjuqIWj97efdxZdlaxTnVtfTvJmOXsky/9sPI4CPpgFAUgz6VCrWWAefyOZ+cXCaPWo7Y2eDA=="
 }

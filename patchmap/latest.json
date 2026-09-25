@@ -1,10 +1,10 @@
 {
   "app": "patchmap",
-  "version": "1.14.0",
-  "notes": "New: the PatchMap Manual (Help › PatchMap Manual, ⇧⌘/) opens in its own window with every feature explained and a list of what's changed. Also in this update: zoomed out, the schematic shows device names (zoom in for ports); Find (⌘F); Redo (⇧⌘Z); Delete asks first when gear still has cables; dashed power, dotted USB and double-line fibre with a Key button; a calmer top bar with a saved indicator; a rig summary panel; one line per cable on the patch sheet.",
-  "file": "PatchMap-1.14.0.pmupdate",
-  "sha256": "4782c3c28958d0d1663afda38142301c8bb17ea63fbfc786ad344ce977bc9a22",
-  "size": 854769,
-  "released": "2026-09-24T18:34:48.192Z",
-  "sig": "yHhXOXydq8gG4yE0qnmdpK5kBE1/CjqIQOjbjs4Eq/G31q3DAVWCe/ERXfjDBygPCH7MHGpvGmOeoyrwl5ENCA=="
+  "version": "1.15.0",
+  "notes": "New: ShopCall link. Stock counts come straight from ShopCall (View › Refresh Stock from ShopCall, and automatically at launch), Send to ShopCall… puts the rig in ShopCall's PatchMap inbox for Orders › Import from PatchMap, and File › Link to Gig… lets you save the patch pack PDF and the rig file into the gig's Drive folder. Also: removing a port with cables asks first; printed schematics tile across sheets instead of shrinking; CSV Pack Repo import reads Category as the department; and PatchMap now shares the BSI look (colours, buttons, dialogs, messages) with ShopCall, StandBy and Loader.",
+  "file": "PatchMap-1.15.0.pmupdate",
+  "sha256": "237f01cdc22a9e40fbd83756638e60f4b83ea186733079580c02f3360685813c",
+  "size": 961156,
+  "released": "2026-09-25T17:16:30.578Z",
+  "sig": "rwY6f7dFhvqeEk60qzOJF305BbrjZt7PCp/CqXCavkwuVWp3qjyO7TJrU7elQdblXeWqUs9QQs7tk7XQxFogAg=="
 }

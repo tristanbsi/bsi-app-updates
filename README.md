@@ -12,6 +12,8 @@ standby/latest.json
 standby/StandBy-X.Y.Z.sbupdate
 loader/latest.json
 loader/Loader-X.Y.Z.ldupdate
+trusstape/latest.json
+trusstape/TrussTape-X.Y.Z.ttupdate
 client/updater.js             the checker built into each app (copied out with tools/sync-client.js)
 tools/publish.js              signs a package and adds it as the latest release
 ```
@@ -37,6 +39,10 @@ node tools/publish.js standby ~/bsi-showcall-app/host/dist-updates/StandBy-X.Y.Z
 # Loader: bump package.json version, then in ~/loader (or its worktree)
 npm run package && npm run update-package -- "What changed, in one or two sentences."
 node tools/publish.js loader ~/loader/dist-updates/Loader-X.Y.Z.ldupdate
+
+# TrussTape: bump package.json version, then in ~/trusstape
+npm run package && npm run update-package -- "What changed, in one or two sentences."
+node tools/publish.js trusstape ~/trusstape/dist-updates/TrussTape-X.Y.Z.ttupdate
 
 git push     # this is the moment the apps can see it
 ```

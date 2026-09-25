@@ -10,6 +10,8 @@ const src = path.join(__dirname, '..', 'client', 'updater.js');
 const targets = (process.argv.slice(2).length ? process.argv.slice(2) : [
   path.join(home, 'patchmap', 'code', 'updater.js'),
   path.join(home, 'bsi-showcall-app', 'host', 'lib', 'updater.js'),
+  path.join(home, 'loader', 'lib', 'updater.js'),
+  path.join(home, 'trusstape', 'lib', 'updater.js'),
 ]);
 for (const t of targets) {
   if (!fs.existsSync(path.dirname(t))) { console.log(`skip ${t} (no folder)`); continue; }

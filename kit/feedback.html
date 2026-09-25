@@ -9,9 +9,10 @@
      identity hue comes from data-app on <html>; nothing else differs between apps. */
   html, body { margin: 0; height: 100%; }
   body { padding: 18px 20px 16px; display: flex; flex-direction: column; gap: var(--bsi-space-3); -webkit-user-select: none; }
-  h1 { font-size: var(--bsi-t-heading); margin: 0; }
+  .bsi h1 { font-size: var(--bsi-t-heading); margin: 0; }
   textarea.bsi-field { flex: 1; resize: none; -webkit-user-select: text; }
-  #status { flex: 1; font-size: var(--bsi-t-meta); min-height: 16px; }
+  .bsi .bsi-actions { flex-wrap: nowrap; }
+  #status { flex: 1; min-width: 0; font-size: var(--bsi-t-meta); min-height: 16px; overflow-wrap: anywhere; }
   #status.err { color: var(--bsi-danger); } #status.ok { color: var(--bsi-ok); } #status.busy { color: var(--bsi-fg-muted); }
 </style></head>
 <body>

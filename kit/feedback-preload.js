@@ -3,7 +3,7 @@ const arg = k => { const a = process.argv.find(x => x.startsWith('--fb-' + k + '
 let palette = { light: {}, dark: {} };
 try { palette = JSON.parse(arg('palette') || '{}') || palette; } catch {}
 contextBridge.exposeInMainWorld('feedback', {
-  context: arg('context'), appName: arg('app'), palette,
+  context: arg('context'), appName: arg('app'), appId: arg('appid'), palette,
   send: (message, context) => ipcRenderer.invoke('feedback:send', message, context),
   close: () => ipcRenderer.send('feedback:close'),
 });

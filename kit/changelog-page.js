@@ -7,7 +7,7 @@
 // Source of truth: bsi-app-updates/kit/changelog-page.js; `node tools/sync-kit.js` copies it out.
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) module.exports = factory();
-  else root.renderChangelog = factory().renderChangelog;
+  else { const f = factory(); root.renderChangelog = f.renderChangelog; root.changelogStyles = f.changelogStyles; }
 })(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
   const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -64,5 +64,19 @@
     return text;
   }
 
-  return { renderChangelog, parseChangelog, parseMarkdown, parseJson, latestNotes };
+  // The CSS the fragment expects, on the BSI design tokens (bsi-tokens.css beside the manual): the same What's new in
+  // every app. Manuals embed it once: <style>${changelogStyles()}</style> and wrap the fragment in .bsi-changelog.
+  function changelogStyles() {
+    return [
+      '.bsi-changelog h3 { display: flex; align-items: baseline; gap: 8px; font-size: var(--bsi-t-item, 17px); font-weight: var(--bsi-w-semibold, 600); margin: var(--bsi-space-5, 24px) 0 var(--bsi-space-2, 8px); }',
+      '.bsi-changelog h3 .ver { font-family: var(--bsi-font-mono, ui-monospace, Menlo, monospace); font-variant-numeric: tabular-nums; }',
+      '.bsi-changelog h3 .date { font-size: var(--bsi-t-meta, 12px); font-weight: var(--bsi-w-regular, 400); color: var(--bsi-fg-muted, #666); }',
+      '.bsi-changelog h3 .pill { display: inline-flex; align-items: center; min-height: 20px; padding: 0 8px; border-radius: var(--bsi-radius-pill, 999px); font-size: var(--bsi-t-meta, 12px); font-weight: var(--bsi-w-medium, 500); background: var(--bsi-accent-soft, #eee); color: var(--bsi-accent-ink, inherit); }',
+      '.bsi-changelog ul { margin: 0 0 var(--bsi-space-3, 12px); padding-left: 20px; }',
+      '.bsi-changelog li { margin: 4px 0; line-height: var(--bsi-lh-body, 1.5); }',
+      '.bsi-changelog li b { font-weight: var(--bsi-w-semibold, 600); }',
+    ].join('\n');
+  }
+
+  return { renderChangelog, parseChangelog, parseMarkdown, parseJson, latestNotes, changelogStyles };
 });

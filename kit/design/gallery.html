@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" class="bsi" data-app="shopcall">
+<head>
+<meta charset="utf-8">
+<title>BSI design gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="base.css">
+<style>
+  body { margin: 0; padding: var(--bsi-space-5); }
+  .bar { display: flex; align-items: center; gap: var(--bsi-space-4); flex-wrap: wrap; margin-bottom: var(--bsi-space-5); }
+  .bar .name { font-weight: var(--bsi-w-bold); font-size: var(--bsi-t-item); }
+  .grid { display: grid; gap: var(--bsi-space-5); grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+  .sw { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--bsi-space-2); }
+  .sw div { height: 44px; border-radius: var(--bsi-radius); display: flex; align-items: flex-end; padding: 4px 6px; font-size: 11px; font-family: var(--bsi-font-mono); border: var(--bsi-hair) solid var(--bsi-border); }
+  .all { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: var(--bsi-space-4); }
+  .all iframe { width: 100%; height: 900px; border: var(--bsi-hair) solid var(--bsi-border-strong); border-radius: var(--bsi-radius); background: transparent; }
+  .type p { margin: 0 0 var(--bsi-space-2); }
+</style>
+</head>
+<body>
+<div class="bar" id="bar">
+  <span class="name">BSI design gallery</span>
+  <label class="bsi-label" style="margin:0">App</label>
+  <div class="bsi-seg" id="apps">
+    <button data-app="shopcall" aria-pressed="true">ShopCall</button><button data-app="standby">StandBy</button><button data-app="patchmap">PatchMap</button><button data-app="loader">Loader</button>
+  </div>
+  <label class="bsi-label" style="margin:0">Theme</label>
+  <div class="bsi-seg" id="themes"><button data-theme="light">Light</button><button data-theme="dark">Dark</button><button data-theme="" aria-pressed="true">Follow the Mac</button></div>
+  <button class="bsi-btn bsi-btn-quiet" id="showAll">Show all eight side by side</button>
+</div>
+
+<div id="one">
+<div class="grid">
+  <section class="bsi-well">
+    <h2>Colour</h2>
+    <p class="bsi-meta">Neutral surfaces are shared. Only the accent (and StandBy's warmth) changes per app. Status colours never change.</p>
+    <div class="sw">
+      <div style="background:var(--bsi-bg-base)">base</div><div style="background:var(--bsi-bg-raised)">raised</div><div style="background:var(--bsi-bg-lit)">lit</div><div style="background:var(--bsi-bg-sunken)">sunken</div>
+      <div style="background:var(--bsi-accent);color:var(--bsi-on-accent)">accent</div><div style="background:var(--bsi-ok);color:var(--bsi-on-ok)">ok</div><div style="background:var(--bsi-warn);color:var(--bsi-on-warn)">warn</div><div style="background:var(--bsi-danger);color:var(--bsi-on-danger)">danger</div>
+      <div style="background:var(--bsi-done);color:var(--bsi-on-done)">done</div><div style="background:var(--bsi-tape-red);color:#fff">red tape</div><div style="background:var(--bsi-tape-yellow)">yellow</div><div style="background:var(--bsi-tape-blue);color:#fff">blue</div>
+      <div style="background:var(--bsi-tape-green)">green</div><div style="background:var(--bsi-tape-orange)">orange</div><div style="background:var(--bsi-tape-purple);color:#fff">purple</div><div style="background:var(--bsi-tape-black);color:#fff;box-shadow:inset 0 0 0 1px var(--bsi-tape-black-edge)">black</div>
+    </div>
+    <p style="margin-top:var(--bsi-space-3)">Text: <span>normal</span> · <span class="bsi-muted">muted</span> · <span style="color:var(--bsi-fg-faint)">faint (glyphs only)</span> · <a href="#">a link</a> · <span class="bsi-ok">ok</span> · <span class="bsi-warn">attention</span> · <span class="bsi-danger">stop</span> · <span class="bsi-done">done</span></p>
+  </section>
+
+  <section class="bsi-well type">
+    <h2>Type</h2>
+    <p class="bsi-display">Display 28 · a gig name</p>
+    <p class="bsi-section">Section 19 · Needs you</p>
+    <p class="bsi-item">Item 17 · Cornell Homecoming</p>
+    <p class="bsi-heading">Heading 15 · 38 of 52 pulled</p>
+    <p>Body · Sentence case everywhere. Counts and IDs in mono: <span class="bsi-num">46/47</span>, <span class="bsi-num">MT-042</span>.</p>
+    <p class="bsi-meta">Meta 12 · Thu Sep 17 · 15:02 · in 2 days</p>
+    <p><span class="bsi-badge">released</span> <span class="bsi-badge warn">order changed</span> <span class="bsi-badge danger">overdue</span> <span class="bsi-badge done">complete</span> <kbd>⌘K</kbd></p>
+  </section>
+
+  <section class="bsi-well">
+    <h2>Buttons</h2>
+    <p class="bsi-meta">One primary per screen. Round on the desktop apps; the chamfer is ShopCall's write buttons, lit in the page colour.</p>
+    <div class="bsi-actions"><button class="bsi-btn bsi-btn-primary">Save</button><button class="bsi-btn">Secondary</button><button class="bsi-btn bsi-btn-quiet">Quiet</button><button class="bsi-btn bsi-btn-warn">Mark short</button><button class="bsi-btn bsi-btn-danger outline">Remove…</button><button class="bsi-btn" disabled>Busy</button></div>
+    <div class="bsi-actions" style="margin-top:var(--bsi-space-3)"><button class="bsi-btn chamfer bsi-btn-primary">Start pull</button><button class="bsi-btn chamfer">Print labels</button><button class="bsi-btn chamfer bsi-btn-warn">Un-pull</button><button class="bsi-btn chamfer bsi-btn-danger">Delete</button></div>
+    <div class="bsi-actions" style="margin-top:var(--bsi-space-3)"><button class="bsi-btn bsi-btn-sm">Small</button><button class="bsi-btn bsi-btn-lg bsi-btn-primary">Phone size (44)</button>
+      <div class="bsi-seg"><button aria-pressed="true">Pull</button><button>Truck</button><button>Intake</button></div></div>
+  </section>
+
+  <section class="bsi-well">
+    <h2>Fields</h2>
+    <label class="bsi-label" for="f1">Order name</label><input id="f1" class="bsi-field" placeholder="Cornell Homecoming">
+    <p class="bsi-help">Exactly as it should read on the labels.</p>
+    <label class="bsi-label" for="f2">Qty</label><input id="f2" class="bsi-field mono" value="12" style="width:90px" aria-invalid="true"><p class="bsi-error">Only 8 are free that week.</p>
+    <label class="bsi-label" for="f3">Notes</label><textarea id="f3" class="bsi-field" placeholder="Anything the crew should know"></textarea>
+    <div class="bsi-actions" style="margin-top:var(--bsi-space-3)"><label class="bsi-check"><input type="checkbox" checked> Sub-rental</label><label class="bsi-switch"><input type="checkbox" checked><i></i> Loader numbers</label></div>
+  </section>
+
+  <section class="bsi-well">
+    <h2>Status and tape</h2>
+    <ul class="bsi-list">
+      <li><span class="bsi-tape red"></span><b>Cornell Homecoming</b><span class="bsi-muted">Red tape · Thu Oct 16</span><span class="bsi-badge done" style="margin-left:auto">pulled</span></li>
+      <li><span class="bsi-tape blue"></span><b>State of the U</b><span class="bsi-muted">Blue tape</span><span class="bsi-dot warn" style="margin-left:auto"></span><span class="bsi-warn">14 still to pull</span></li>
+      <li><span class="bsi-tape black"></span><b>Alumni dinner</b><span class="bsi-muted">Black tape</span><span class="bsi-dot danger" style="margin-left:auto"></span><span class="bsi-danger">not released</span></li>
+    </ul>
+    <p><span class="bsi-tape-tag blue">Blue tape</span> <span class="bsi-tape-tag red">Red tape</span> <span class="bsi-tape-tag yellow">Yellow tape</span> <span class="bsi-tape-tag black">Black tape</span> <span class="bsi-pill">draft</span> <span class="bsi-pill on">this version</span></p>
+    <p class="bsi-empty">Nothing needs you.</p>
+  </section>
+
+  <section class="bsi-well">
+    <h2>Banners</h2>
+    <div class="bsi-banner info"><svg class="bsi-icon" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><path d="M8 7.5v4M8 5v.2"/></svg><span class="bsi-body">The order changed since this pull was built.</span><button class="bsi-btn bsi-btn-sm">Rebuild</button></div><br>
+    <div class="bsi-banner ok drain" style="--bsi-drain:8s"><b>Ron</b><span class="bsi-body">Got it.</span></div><br>
+    <div class="bsi-banner warn drain" style="--bsi-drain:20s"><b>Careful</b><span class="bsi-body">Something went wrong inside StandBy. The show is still running.</span></div><br>
+    <div class="bsi-banner danger"><b>Host lost</b><span class="bsi-body">Looking for the caller…</span></div>
+  </section>
+
+  <section class="bsi-well">
+    <h2>Table</h2>
+    <table class="bsi-table"><thead><tr><th>Item</th><th>Case</th><th class="num">Qty</th><th></th></tr></thead>
+      <tbody><tr><td>Shure ULXD4Q</td><td>ULXD rack 1</td><td class="num">2</td><td><span class="bsi-badge done">pulled</span></td></tr>
+      <tr><td>SQ5</td><td>SQ5_1</td><td class="num">1</td><td><span class="bsi-badge warn">swap</span></td></tr>
+      <tr><td>XLR 25'</td><td>XLR CAB</td><td class="num">24</td><td><span class="bsi-badge">on shelf</span></td></tr></tbody></table>
+  </section>
+
+  <section class="bsi-well">
+    <h2>Dialog and toast</h2>
+    <div class="bsi-actions"><button class="bsi-btn" id="openDlg">Open a dialog</button><button class="bsi-btn" id="toast">Show a toast</button></div>
+    <dialog class="bsi-dialog" id="dlg"><h2>Remove this port?</h2><p>3 cables are plugged into <b>SDI out 2</b>. Removing the port removes them too. Undo brings everything back.</p>
+      <div class="bsi-actions"><button class="bsi-btn bsi-btn-quiet" value="cancel">Cancel</button><button class="bsi-btn bsi-btn-danger" value="ok">Remove port</button></div></dialog>
+    <div class="bsi-toast" id="tst" role="status">Sent to ShopCall as RIG-20260925-K7Q2 <button class="bsi-btn">Undo</button></div>
+  </section>
+</div>
+</div>
+<div id="all" class="all" hidden></div>
+
+<script>
+  const q = new URLSearchParams(location.search), html = document.documentElement;
+  const setApp = a => { html.dataset.app = a; document.querySelectorAll('#apps button').forEach(b => b.setAttribute('aria-pressed', b.dataset.app === a)); };
+  const setTheme = t => { if (t) html.dataset.theme = t; else delete html.dataset.theme; document.querySelectorAll('#themes button').forEach(b => b.setAttribute('aria-pressed', (b.dataset.theme || '') === (t || ''))); };
+  if (q.get('app')) setApp(q.get('app')); if (q.has('theme')) setTheme(q.get('theme'));
+  if (q.get('embed')) document.getElementById('bar').hidden = true;
+  document.getElementById('apps').onclick = e => e.target.dataset.app && setApp(e.target.dataset.app);
+  document.getElementById('themes').onclick = e => e.target.dataset.theme !== undefined && setTheme(e.target.dataset.theme);
+  document.getElementById('showAll').onclick = () => {
+    const all = document.getElementById('all'); document.getElementById('one').hidden = true; all.hidden = false; document.getElementById('showAll').hidden = true;
+    for (const t of ['light', 'dark']) for (const a of ['shopcall', 'standby', 'patchmap', 'loader']) { const f = document.createElement('iframe'); f.src = `gallery.html?embed=1&app=${a}&theme=${t}`; f.title = `${a} ${t}`; all.appendChild(f); }
+  };
+  const dlg = document.getElementById('dlg'); document.getElementById('openDlg').onclick = () => dlg.showModal(); dlg.querySelectorAll('button').forEach(b => b.onclick = () => dlg.close());
+  document.getElementById('toast').onclick = () => { const t = document.getElementById('tst'); t.classList.add('on'); t.style.animation = 'none'; setTimeout(() => t.classList.remove('on'), 8000); };
+</script>
+</body>
+</html>

@@ -1,42 +1,36 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+<html lang="en" class="bsi"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'unsafe-inline'">
 <title>Send Feedback</title>
+<link rel="stylesheet" href="bsi-tokens.css">
+<link rel="stylesheet" href="bsi-base.css">
 <style>
-  :root { --bg:#F4F5F1; --panel:#FFFFFF; --ink:#1B1F24; --muted:#697077; --line:#CFD3CB; --accent:#1E8C82; --accent-ink:#fff; --danger:#C93030; --ok:#1E7A45; color-scheme: light dark; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#1C2025; --panel:#262B31; --ink:#E6E8E3; --muted:#98A0A8; --line:#3A4149; --accent:#2BA89C; --danger:#F07070; --ok:#5CC98A; } }
-  * { box-sizing: border-box; }
+  /* The shared feedback window: the BSI design system (bsi-tokens.css + bsi-base.css, synced from the kit). The app's
+     identity hue comes from data-app on <html>; nothing else differs between apps. */
   html, body { margin: 0; height: 100%; }
-  body { background: var(--bg); color: var(--ink); font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-         padding: 18px 20px 16px; display: flex; flex-direction: column; gap: 10px; -webkit-user-select: none; }
-  h1 { font-size: 15px; font-weight: 600; margin: 0; }
-  textarea { flex: 1; width: 100%; resize: none; padding: 9px 10px; border: 1px solid var(--line); border-radius: 7px;
-             background: var(--panel); color: var(--ink); font: inherit; -webkit-user-select: text; }
-  textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; }
-  .note { color: var(--muted); font-size: 12px; margin: 0; }
-  .row { display: flex; align-items: center; gap: 8px; }
-  #status { flex: 1; font-size: 12px; min-height: 16px; }
-  #status.err { color: var(--danger); } #status.ok { color: var(--ok); } #status.busy { color: var(--muted); }
-  button { font: inherit; padding: 5px 14px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
-  button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
-  button:disabled { opacity: .5; }
+  body { padding: 18px 20px 16px; display: flex; flex-direction: column; gap: var(--bsi-space-3); -webkit-user-select: none; }
+  h1 { font-size: var(--bsi-t-heading); margin: 0; }
+  textarea.bsi-field { flex: 1; resize: none; -webkit-user-select: text; }
+  #status { flex: 1; font-size: var(--bsi-t-meta); min-height: 16px; }
+  #status.err { color: var(--bsi-danger); } #status.ok { color: var(--bsi-ok); } #status.busy { color: var(--bsi-fg-muted); }
 </style></head>
 <body>
   <h1>Send feedback about <span id="appName">this app</span></h1>
-  <textarea id="msg" maxlength="4000" placeholder="What's working, what isn't, what you'd like" autofocus></textarea>
-  <p class="note">Your name and the screen you were on go with it.</p>
-  <div class="row">
+  <textarea id="msg" class="bsi-field" maxlength="4000" placeholder="What's working, what isn't, what you'd like" autofocus></textarea>
+  <p class="bsi-help" style="margin:0">Your name and the screen you were on go with it.</p>
+  <div class="bsi-actions">
     <div id="status" role="status" aria-live="polite"></div>
-    <button id="cancel">Cancel</button>
-    <button id="send" class="primary">Send</button>
+    <button id="cancel" class="bsi-btn bsi-btn-quiet">Cancel</button>
+    <button id="send" class="bsi-btn bsi-btn-primary">Send</button>
   </div>
 <script>
   const F = window.feedback, $ = id => document.getElementById(id);
   if (F.appName) $('appName').textContent = F.appName;
-  // the app's own colours, handed in by feedback.js (kit): light set, and a dark set for dark mode
+  // identity: data-app picks the app's hue from bsi-tokens.css; an app may still hand in its own colours (older callers)
+  if (F.appId) document.documentElement.dataset.app = F.appId;
   const applyPalette = () => {
     const p = (F.palette && (matchMedia('(prefers-color-scheme: dark)').matches ? F.palette.dark : F.palette.light)) || {};
-    const map = { bg: '--bg', panel: '--panel', ink: '--ink', muted: '--muted', line: '--line', accent: '--accent', accentInk: '--accent-ink', danger: '--danger', ok: '--ok' };
+    const map = { bg: '--bsi-bg-base', panel: '--bsi-bg-raised', ink: '--bsi-fg', muted: '--bsi-fg-muted', line: '--bsi-border-strong', accent: '--bsi-accent', accentInk: '--bsi-on-accent', danger: '--bsi-danger', ok: '--bsi-ok' };
     for (const k in map) if (p[k]) document.documentElement.style.setProperty(map[k], String(p[k]));
   };
   applyPalette(); matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyPalette);

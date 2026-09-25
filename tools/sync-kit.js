@@ -41,6 +41,11 @@ const FILES = [
   { src: 'feedback-preload.js', to: 'lib' },
   { src: 'feedback.html', to: 'lib' },
   { src: 'changelog-page.js', to: 'web' },
+  // the design system: beside the feedback window (it links them) and beside the manual (for its What's new)
+  { src: 'design/tokens.css', to: 'lib', as: 'bsi-tokens.css' },
+  { src: 'design/base.css', to: 'lib', as: 'bsi-base.css' },
+  { src: 'design/tokens.css', to: 'web', as: 'bsi-tokens.css' },
+  { src: 'design/base.css', to: 'web', as: 'bsi-base.css' },
 ];
 
 const wanted = args.filter(a => APPS[a]);
@@ -50,7 +55,7 @@ for (const id of apps) {
   const app = APPS[id];
   if (!fs.existsSync(app.dir)) { console.log(`${id}: no app at ${app.dir}, skipped`); continue; }
   for (const f of FILES) {
-    const src = path.join(kit, f.src), dest = path.join(app.dir, app[f.to], f.src);
+    const src = path.join(kit, f.src), dest = path.join(app.dir, app[f.to], f.as || f.src);
     const have = fs.existsSync(dest) ? fs.readFileSync(src).equals(fs.readFileSync(dest)) : null;
     if (check) {
       if (have === true) continue;

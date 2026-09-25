@@ -1,0 +1,160 @@
+/* BSI base components — built only on tokens.css. No framework, no app colours of its own.
+   Adopt by class: .bsi-btn, .bsi-field, .bsi-dialog, .bsi-toast, .bsi-banner, .bsi-table, .bsi-badge, .bsi-dot, .bsi-tape.
+   The rules behind each class are in README.md. Load tokens.css first. */
+
+/* ---- page ---- */
+.bsi, .bsi body { font-family: var(--bsi-font-sans); font-size: var(--bsi-t-body); line-height: var(--bsi-lh-body); color: var(--bsi-fg); background: var(--bsi-bg-base); -webkit-font-smoothing: antialiased; }
+.bsi *, .bsi *::before, .bsi *::after { box-sizing: border-box; }
+.bsi [hidden] { display: none !important; }
+.bsi a { color: var(--bsi-accent-ink); text-decoration: none; text-underline-offset: 3px; }
+.bsi a:hover { text-decoration: underline; }
+.bsi ::selection { background: color-mix(in srgb, var(--bsi-accent) 35%, transparent); }
+.bsi .bsi-mono, .bsi .bsi-num { font-family: var(--bsi-font-mono); font-variant-numeric: tabular-nums; font-weight: var(--bsi-w-medium); }
+.bsi .bsi-muted { color: var(--bsi-fg-muted); }
+.bsi .bsi-meta { font-size: var(--bsi-t-meta); color: var(--bsi-fg-muted); }
+.bsi .bsi-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* ---- type scale: sentence case, weights carry hierarchy, never tracked caps ---- */
+.bsi h1, .bsi .bsi-display { font-size: var(--bsi-t-display); font-weight: var(--bsi-w-semibold); line-height: var(--bsi-lh-tight); margin: 0 0 var(--bsi-space-3); letter-spacing: -.01em; }
+.bsi h2, .bsi .bsi-section { font-size: var(--bsi-t-section); font-weight: var(--bsi-w-bold); line-height: var(--bsi-lh-tight); margin: 0 0 var(--bsi-space-3); }
+.bsi h3, .bsi .bsi-item { font-size: var(--bsi-t-item); font-weight: var(--bsi-w-semibold); line-height: var(--bsi-lh-tight); margin: 0 0 var(--bsi-space-2); }
+.bsi h4, .bsi .bsi-heading { font-size: var(--bsi-t-heading); font-weight: var(--bsi-w-semibold); line-height: var(--bsi-lh-tight); margin: 0 0 var(--bsi-space-2); }
+
+/* ---- surfaces: one lit surface per screen; sections are wells; everything else is type on the floor ---- */
+.bsi .bsi-well { background: var(--bsi-bg-raised); border-radius: var(--bsi-radius-well); padding: var(--bsi-space-4); }
+.bsi .bsi-lit { background: var(--bsi-bg-lit); border: var(--bsi-hair) solid var(--bsi-border-lit); border-radius: var(--bsi-radius); padding: var(--bsi-space-5); }
+.bsi .bsi-hair { border: 0; border-top: var(--bsi-hair) solid var(--bsi-border); margin: var(--bsi-space-4) 0; }
+
+/* ---- focus: one ring everywhere, keyboard only ---- */
+.bsi :focus-visible { outline: var(--bsi-ring) solid var(--bsi-accent); outline-offset: 2px; }
+
+/* ---- buttons: primary (one per screen) · secondary · quiet · warn · danger ---- */
+.bsi .bsi-btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--bsi-space-2); min-height: 32px; padding: 0 var(--bsi-space-4);
+  font: inherit; font-weight: var(--bsi-w-semibold); line-height: 1; color: var(--bsi-fg); background: var(--bsi-bg-raised);
+  border: var(--bsi-hair) solid var(--bsi-border-strong); border-radius: var(--bsi-radius-control); cursor: pointer; white-space: nowrap; text-decoration: none;
+  transition: background var(--bsi-dur-base) var(--bsi-ease), border-color var(--bsi-dur-base) var(--bsi-ease), color var(--bsi-dur-base) var(--bsi-ease), transform 80ms; }
+.bsi .bsi-btn:hover { border-color: var(--bsi-fg-muted); }
+.bsi .bsi-btn:active:not(:disabled) { transform: translateY(1px); }
+.bsi .bsi-btn:disabled, .bsi .bsi-btn.busy { opacity: .45; cursor: default; transform: none; }
+.bsi .bsi-btn-primary { background: var(--bsi-accent); border-color: var(--bsi-accent); color: var(--bsi-on-accent); font-weight: var(--bsi-w-bold); }
+.bsi .bsi-btn-primary:hover { background: color-mix(in srgb, var(--bsi-accent) 88%, var(--bsi-fg)); border-color: transparent; }
+.bsi .bsi-btn-quiet { background: transparent; border-color: transparent; color: var(--bsi-fg-muted); }
+.bsi .bsi-btn-quiet:hover { color: var(--bsi-fg); background: var(--bsi-bg-sunken); border-color: transparent; }
+.bsi .bsi-btn-warn { background: var(--bsi-warn); border-color: var(--bsi-warn); color: var(--bsi-on-warn); }
+.bsi .bsi-btn-danger { background: var(--bsi-danger); border-color: var(--bsi-danger); color: var(--bsi-on-danger); }
+.bsi .bsi-btn-danger.outline { background: transparent; color: var(--bsi-danger); border-color: color-mix(in srgb, var(--bsi-danger) 45%, var(--bsi-border-strong)); }
+.bsi .bsi-btn-sm { min-height: 26px; padding: 0 var(--bsi-space-3); font-size: var(--bsi-t-meta); }
+.bsi .bsi-btn-lg { min-height: var(--bsi-touch); padding: 0 var(--bsi-space-5); font-size: var(--bsi-t-heading); }
+@media (pointer: coarse) { .bsi .bsi-btn { min-height: var(--bsi-touch); } }
+/* the chamfer: a WRITE button on a page that has a frame colour (ShopCall). Two corners cut, the edge a line of light
+   in the frame colour (--bsi-edge, defaults to the accent). Round everywhere else. */
+.bsi .bsi-btn.chamfer { --bsi-edge: var(--bsi-edge-color, var(--bsi-accent)); border-radius: 0; border-color: transparent; letter-spacing: .01em;
+  clip-path: polygon(var(--bsi-chamfer) 0, 100% 0, 100% calc(100% - var(--bsi-chamfer)), calc(100% - var(--bsi-chamfer)) 100%, 0 100%, 0 var(--bsi-chamfer));
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bsi-edge) 12%, var(--bsi-bg-base)), color-mix(in srgb, var(--bsi-edge) 4%, var(--bsi-bg-base))) padding-box,
+              linear-gradient(color-mix(in srgb, var(--bsi-edge) 62%, transparent), color-mix(in srgb, var(--bsi-edge) 62%, transparent)) border-box;
+  box-shadow: inset 0 0 8px -2px color-mix(in srgb, var(--bsi-edge) 22%, transparent); }
+.bsi .bsi-btn.chamfer.bsi-btn-primary { color: var(--bsi-bg-base); background: linear-gradient(180deg, color-mix(in srgb, var(--bsi-edge) 78%, white), var(--bsi-edge)); box-shadow: inset 0 1px 0 rgba(255,255,255,.3); }
+.bsi .bsi-btn.chamfer.bsi-btn-warn { background: var(--bsi-warn); color: var(--bsi-on-warn); }
+.bsi .bsi-btn.chamfer.bsi-btn-danger { background: var(--bsi-danger); color: var(--bsi-on-danger); }
+.bsi .bsi-btn.chamfer:focus-visible { outline: none; box-shadow: inset 0 0 0 var(--bsi-ring) var(--bsi-accent); }
+.bsi .bsi-actions { display: flex; align-items: center; gap: var(--bsi-space-3); flex-wrap: wrap; }
+.bsi .bsi-actions.end { justify-content: flex-end; }
+
+/* ---- fields ---- */
+.bsi .bsi-label { display: block; font-size: var(--bsi-t-meta); color: var(--bsi-fg-muted); margin: 0 0 var(--bsi-space-1); }
+.bsi .bsi-field { font: inherit; color: var(--bsi-fg); background: var(--bsi-bg-raised); min-height: 32px; padding: 0 var(--bsi-space-3); width: 100%;
+  border: var(--bsi-hair) solid var(--bsi-border-strong); border-radius: var(--bsi-radius-control); }
+.bsi textarea.bsi-field { min-height: 88px; padding: var(--bsi-space-2) var(--bsi-space-3); resize: vertical; line-height: var(--bsi-lh-body); }
+.bsi .bsi-field::placeholder { color: var(--bsi-fg-faint); }
+.bsi .bsi-field:focus-visible { outline: var(--bsi-ring) solid var(--bsi-accent); outline-offset: 1px; border-color: transparent; }
+.bsi .bsi-field[aria-invalid="true"] { border-color: var(--bsi-danger); }
+.bsi .bsi-field.mono { font-family: var(--bsi-font-mono); font-variant-numeric: tabular-nums; }
+.bsi .bsi-help { font-size: var(--bsi-t-meta); color: var(--bsi-fg-muted); margin: var(--bsi-space-1) 0 0; }
+.bsi .bsi-error { font-size: var(--bsi-t-meta); color: var(--bsi-danger); margin: var(--bsi-space-1) 0 0; }
+.bsi .bsi-check { display: inline-flex; align-items: center; gap: var(--bsi-space-2); min-height: 28px; cursor: pointer; }
+.bsi .bsi-check input { accent-color: var(--bsi-accent); width: 16px; height: 16px; margin: 0; }
+.bsi .bsi-switch { --w: 34px; position: relative; display: inline-flex; align-items: center; gap: var(--bsi-space-2); cursor: pointer; }
+.bsi .bsi-switch input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.bsi .bsi-switch i { width: var(--w); height: 20px; border-radius: var(--bsi-radius-pill); background: var(--bsi-border-strong); position: relative; transition: background var(--bsi-dur-base) var(--bsi-ease); }
+.bsi .bsi-switch i::after { content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: var(--bsi-bg-raised); transition: transform var(--bsi-dur-base) var(--bsi-ease); }
+.bsi .bsi-switch input:checked + i { background: var(--bsi-accent); }
+.bsi .bsi-switch input:checked + i::after { transform: translateX(14px); }
+.bsi .bsi-switch input:focus-visible + i { outline: var(--bsi-ring) solid var(--bsi-accent); outline-offset: 2px; }
+.bsi .bsi-seg { display: inline-flex; border: var(--bsi-hair) solid var(--bsi-border-strong); border-radius: var(--bsi-radius-control); overflow: hidden; }
+.bsi .bsi-seg button { font: inherit; font-weight: var(--bsi-w-semibold); color: var(--bsi-fg-muted); background: transparent; border: 0; padding: 5px 12px; cursor: pointer; }
+.bsi .bsi-seg button[aria-pressed="true"], .bsi .bsi-seg button.on { background: var(--bsi-accent); color: var(--bsi-on-accent); }
+
+/* ---- dialog: a title, a body, actions right-aligned with the primary last. Escape closes; focus returns. ---- */
+.bsi dialog.bsi-dialog, .bsi .bsi-dialog { background: var(--bsi-bg-raised); color: var(--bsi-fg); border: var(--bsi-hair) solid var(--bsi-border-strong); border-radius: var(--bsi-radius-well);
+  padding: var(--bsi-space-5); width: min(560px, calc(100vw - 32px)); box-shadow: var(--bsi-shadow); }
+.bsi dialog.bsi-dialog::backdrop { background: var(--bsi-scrim); }
+.bsi .bsi-dialog h2 { font-size: var(--bsi-t-item); margin-bottom: var(--bsi-space-3); }
+.bsi .bsi-dialog p { margin: 0 0 var(--bsi-space-3); }
+.bsi .bsi-dialog .bsi-actions { margin-top: var(--bsi-space-5); justify-content: flex-end; }
+
+/* ---- toasts (a result, bottom centre, drains and goes) and banners (a state, top, stays until it is untrue) ---- */
+.bsi .bsi-toast { position: fixed; left: 50%; bottom: 40px; transform: translate(-50%, 8px); z-index: 60; max-width: min(560px, calc(100vw - 32px));
+  display: flex; align-items: center; gap: var(--bsi-space-3); padding: var(--bsi-space-3) var(--bsi-space-4); border-radius: var(--bsi-radius-control);
+  background: var(--bsi-fg); color: var(--bsi-bg-base); font-weight: var(--bsi-w-semibold); box-shadow: var(--bsi-shadow); opacity: 0; pointer-events: none;
+  transition: opacity var(--bsi-dur-base) var(--bsi-ease), transform var(--bsi-dur-base) var(--bsi-ease); }
+.bsi .bsi-toast.on { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+.bsi .bsi-toast.ok { background: var(--bsi-ok); color: var(--bsi-on-ok); }
+.bsi .bsi-toast.warn { background: var(--bsi-warn); color: var(--bsi-on-warn); }
+.bsi .bsi-toast.danger { background: var(--bsi-danger); color: var(--bsi-on-danger); }
+.bsi .bsi-toast .bsi-btn { min-height: 26px; padding: 0 var(--bsi-space-3); background: transparent; color: inherit; border-color: currentColor; }
+.bsi .bsi-toast::after, .bsi .bsi-banner.drain::after { content: ''; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; background: currentColor; opacity: .5; transform-origin: left; animation: bsi-drain var(--bsi-drain, var(--bsi-drain-toast)) linear forwards; }
+.bsi .bsi-toast:hover::after, .bsi .bsi-banner.drain:hover::after { animation-play-state: paused; }
+.bsi .bsi-banner { position: relative; display: flex; align-items: center; gap: var(--bsi-space-3); padding: var(--bsi-space-3) var(--bsi-space-4);
+  background: var(--bsi-bg-raised); border: var(--bsi-hair) solid var(--bsi-border-strong); border-radius: var(--bsi-radius-control); overflow: hidden; }
+.bsi .bsi-banner.info { border-color: color-mix(in srgb, var(--bsi-accent) 50%, transparent); }
+.bsi .bsi-banner.ok { color: var(--bsi-ok); border-color: color-mix(in srgb, var(--bsi-ok) 50%, transparent); }
+.bsi .bsi-banner.warn { color: var(--bsi-warn); border-color: color-mix(in srgb, var(--bsi-warn) 55%, transparent); }
+.bsi .bsi-banner.danger { color: var(--bsi-danger); border-color: color-mix(in srgb, var(--bsi-danger) 55%, transparent); }
+.bsi .bsi-banner b { color: inherit; }
+.bsi .bsi-banner .bsi-body { color: var(--bsi-fg); flex: 1; }
+.bsi .bsi-banner .bsi-btn { margin-left: auto; }
+@keyframes bsi-drain { to { transform: scaleX(0); } }
+
+/* ---- status marks: a filled mark plus a word, never an edge. warn is round; danger is a square turned 45°. ---- */
+.bsi .bsi-dot { display: inline-block; width: 8px; height: 8px; border-radius: var(--bsi-radius-pill); background: currentColor; vertical-align: middle; margin-right: 6px; flex: none; }
+.bsi .bsi-dot.ok { color: var(--bsi-ok); } .bsi .bsi-dot.warn { color: var(--bsi-warn); } .bsi .bsi-dot.done { color: var(--bsi-done); }
+.bsi .bsi-dot.danger { color: var(--bsi-danger); border-radius: 1px; transform: rotate(45deg) scale(.9); }
+.bsi .bsi-badge { font-family: var(--bsi-font-mono); font-size: var(--bsi-t-meta); letter-spacing: .04em; text-transform: uppercase; color: var(--bsi-fg-muted); display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.bsi .bsi-badge.warn { color: var(--bsi-warn); } .bsi .bsi-badge.danger { color: var(--bsi-danger); } .bsi .bsi-badge.done { color: var(--bsi-done); } .bsi .bsi-badge.ok { color: var(--bsi-ok); }
+.bsi .bsi-badge.warn::before, .bsi .bsi-badge.danger::before, .bsi .bsi-badge.done::before, .bsi .bsi-badge.ok::before { content: ''; width: 6px; height: 6px; border-radius: var(--bsi-radius-pill); background: currentColor; }
+.bsi .bsi-pill { display: inline-flex; align-items: center; min-height: 22px; padding: 0 var(--bsi-space-2); border-radius: var(--bsi-radius-pill); border: var(--bsi-hair) solid var(--bsi-border-strong); font-size: var(--bsi-t-meta); font-weight: var(--bsi-w-medium); color: var(--bsi-fg-muted); }
+.bsi .bsi-pill.on { background: var(--bsi-accent-soft); color: var(--bsi-accent-ink); border-color: transparent; }
+/* status as a word: text-only, for lines and counts */
+.bsi .bsi-ok { color: var(--bsi-ok); } .bsi .bsi-warn { color: var(--bsi-warn); } .bsi .bsi-danger { color: var(--bsi-danger); } .bsi .bsi-done { color: var(--bsi-done); }
+
+/* ---- tape: gig identity, always a straight-edged shape ---- */
+.bsi .bsi-tape { display: inline-block; width: 10px; height: 10px; vertical-align: -1px; margin-right: 6px; background: var(--bsi-tape-blue); flex: none; }
+.bsi .bsi-tape.red { background: var(--bsi-tape-red); } .bsi .bsi-tape.yellow { background: var(--bsi-tape-yellow); } .bsi .bsi-tape.blue { background: var(--bsi-tape-blue); }
+.bsi .bsi-tape.green { background: var(--bsi-tape-green); } .bsi .bsi-tape.orange { background: var(--bsi-tape-orange); } .bsi .bsi-tape.purple { background: var(--bsi-tape-purple); }
+.bsi .bsi-tape.black { background: var(--bsi-tape-black); box-shadow: inset 0 0 0 1px var(--bsi-tape-black-edge); } .bsi .bsi-tape.white { background: var(--bsi-tape-white); box-shadow: inset 0 0 0 1px var(--bsi-border-strong); }
+.bsi .bsi-tape-tag { display: inline-flex; align-items: center; padding: 2px 8px; font-weight: var(--bsi-w-semibold); font-size: var(--bsi-t-meta); color: var(--bsi-tape-fg-light); background: var(--bsi-tape-blue); }
+.bsi .bsi-tape-tag.red { background: var(--bsi-tape-red); } .bsi .bsi-tape-tag.black { background: var(--bsi-tape-black); box-shadow: inset 0 0 0 1px var(--bsi-tape-black-edge); }
+.bsi .bsi-tape-tag.yellow { background: var(--bsi-tape-yellow); } .bsi .bsi-tape-tag.white { background: var(--bsi-tape-white); box-shadow: inset 0 0 0 1px var(--bsi-border-strong); } .bsi .bsi-tape-tag.orange { background: var(--bsi-tape-orange); }
+.bsi .bsi-tape-tag.green { background: var(--bsi-tape-green); } .bsi .bsi-tape-tag.purple { background: var(--bsi-tape-purple); }
+/* dark text on every tape but red and black (light text failed AA on blue and purple) */
+.bsi .bsi-tape-tag.yellow, .bsi .bsi-tape-tag.white, .bsi .bsi-tape-tag.orange, .bsi .bsi-tape-tag.green, .bsi .bsi-tape-tag.blue, .bsi .bsi-tape-tag.purple { color: var(--bsi-tape-fg-dark); }
+
+/* ---- tables and lists: hairlines, inset dividers, mono numbers right-aligned ---- */
+.bsi .bsi-table { width: 100%; border-collapse: collapse; font-size: var(--bsi-t-body); }
+.bsi .bsi-table th { text-align: left; font-size: var(--bsi-t-meta); font-weight: var(--bsi-w-semibold); color: var(--bsi-fg-muted); padding: var(--bsi-space-2) var(--bsi-space-3); border-bottom: var(--bsi-hair) solid var(--bsi-border-strong); }
+.bsi .bsi-table td { padding: var(--bsi-space-3); border-bottom: var(--bsi-hair) solid var(--bsi-border); vertical-align: top; }
+.bsi .bsi-table td.num, .bsi .bsi-table th.num { text-align: right; font-family: var(--bsi-font-mono); font-variant-numeric: tabular-nums; }
+.bsi .bsi-table tr:hover td { background: color-mix(in srgb, var(--bsi-fg) 4%, transparent); }
+.bsi .bsi-list { list-style: none; margin: 0; padding: 0; }
+.bsi .bsi-list > li { display: flex; align-items: center; gap: var(--bsi-space-3); padding: var(--bsi-space-3) 0; border-bottom: var(--bsi-hair) solid var(--bsi-border); }
+.bsi .bsi-list > li:last-child { border-bottom: 0; }
+.bsi .bsi-empty { color: var(--bsi-fg-muted); padding: var(--bsi-space-3) 0; }
+
+/* ---- icons: 16px grid, 1.7 stroke, round caps, currentColor ---- */
+.bsi .bsi-icon { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; vertical-align: -3px; flex: none; }
+
+/* ---- kbd ---- */
+.bsi kbd { font: var(--bsi-w-medium) 11px var(--bsi-font-mono); padding: 1px 5px; border: var(--bsi-hair) solid var(--bsi-border-strong); border-bottom-width: 2px; border-radius: 4px; color: var(--bsi-fg-muted); background: var(--bsi-bg-raised); }
+
+/* ---- motion: nothing carries meaning by motion alone; reduced motion stops it all ---- */
+@media (prefers-reduced-motion: reduce) { .bsi *, .bsi *::before, .bsi *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }

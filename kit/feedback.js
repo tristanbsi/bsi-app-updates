@@ -44,9 +44,9 @@ async function send(message, context) {
 
 // opts: { app: 'patchmap' | 'standby' | 'loader', appName, version: () => string, configDirs: () => [dir…],
 //         parent: () => BrowserWindow | null, context: () => Promise<string> | string, from?: () => string,
-//         palette?: { bg, panel, ink, muted, line, accent, accentInk, danger, ok } — the app's own colours for the
-//         window (any key may be left out; the window keeps its default for it). Two palettes: palette (light) and
-//         paletteDark (used when the Mac is in dark mode). }
+//         palette?: optional, older style: { bg, panel, ink, muted, line, accent, accentInk, danger, ok } overrides. The
+//         window now takes its look from the BSI design system (bsi-tokens.css + bsi-base.css beside this file) and
+//         `app` picks the identity hue, so palettes are no longer needed. }
 function setupFeedback(o) {
   opts = o;
   ipcMain.handle('feedback:send', (_e, message, context) => send(message, context));
@@ -65,7 +65,7 @@ async function openFeedback(o) {
     width: 460, height: 360, resizable: false, minimizable: false, maximizable: false, fullscreenable: false,
     title: 'Send Feedback', show: false, parent: parent || undefined, modal: false,
     webPreferences: { preload: path.join(__dirname, 'feedback-preload.js'), contextIsolation: true, nodeIntegration: false,
-      additionalArguments: ['--fb-context=' + encodeURIComponent(context), '--fb-app=' + encodeURIComponent(opts.appName), '--fb-palette=' + encodeURIComponent(palette)] },
+      additionalArguments: ['--fb-context=' + encodeURIComponent(context), '--fb-app=' + encodeURIComponent(opts.appName), '--fb-appid=' + encodeURIComponent(opts.app || ''), '--fb-palette=' + encodeURIComponent(palette)] },
   });
   fbWin.setMenuBarVisibility(false);
   fbWin.webContents.on('will-navigate', e => e.preventDefault());

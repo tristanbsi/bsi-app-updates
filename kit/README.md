@@ -11,6 +11,7 @@ have drifted (the feed's CI does not run it, since the app repos are private; ru
 | `feedback.js`, `feedback-preload.js`, `feedback.html` | Help › Send Feedback… window and the POST to the collector | same `lib/` folders |
 | `changelog-page.js` | renders `CHANGELOG.md` or `changelog.json` into the manual's What's new | next to each app's `manual.html` |
 | `ci/test.yml` | a GitHub Actions workflow that runs `npm test` | copy to `.github/workflows/test.yml` |
+| `design/tokens.css`, `design/base.css` | the BSI design system: tokens and base components (see `design/README.md`; `design/gallery.html` shows it) | each app's `lib/` and `web/` as `bsi-tokens.css` / `bsi-base.css` |
 
 ## How an app uses each piece
 
@@ -27,8 +28,9 @@ StandBy passes `dataFolder: 'ShowCall'` (its data folder kept the old name on pu
 The API is the same as before: `codeRoot, pickCodeDir, installUnpacked, goBack, readCurrent, versionOf`.
 
 **feedback.js** — `setupFeedback(opts)` once, `openFeedback()` from a menu item, as PatchMap and StandBy already do.
-New: `opts.palette` / `opts.paletteDark` give the window the app's own colours
-(`{ bg, panel, ink, muted, line, accent, accentInk, danger, ok }`, any subset). Loader can use the one-call form
+The window is styled by the design system (`bsi-tokens.css` + `bsi-base.css` beside it) and `opts.app` picks the
+identity hue, so it looks the same in every app. `opts.palette` / `opts.paletteDark` still work for an app that wants
+to override a colour. Loader can use the one-call form
 `openFeedback({ app: 'loader', appName: 'Loader', version: '0.4.0', configPath: '/…/feedback.json' })`.
 `feedback.json` (`{ "url", "key" }`) stays gitignored in each app; PatchMap's copy is the reference.
 

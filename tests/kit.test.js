@@ -7,7 +7,7 @@ const os = require('os');
 const path = require('path');
 const { execFileSync, spawnSync } = require('child_process');
 
-const { renderChangelog, parseChangelog, latestNotes } = require('../kit/changelog-page');
+const { renderChangelog, parseChangelog, latestNotes, changelogStyles } = require('../kit/changelog-page');
 const { createAppUpdates } = require('../kit/app-updates-core');
 
 const scratchRoot = process.env.CLAUDE_JOB_DIR ? path.join(process.env.CLAUDE_JOB_DIR, 'tmp') : os.tmpdir();
@@ -43,6 +43,13 @@ test('the changelog page also works as a browser global', () => {
   const self = {};
   new Function('self', 'module', src)(self, undefined);
   assert.equal(typeof self.renderChangelog, 'function');
+  assert.equal(typeof self.changelogStyles, 'function');
+});
+
+test('changelogStyles styles the fragment on the design tokens only', () => {
+  const css = changelogStyles();
+  assert.match(css, /\.bsi-changelog h3 \.pill/); assert.match(css, /var\(--bsi-accent-soft/);
+  assert.deepEqual([...css.matchAll(/#[0-9a-f]{3,6}\b/gi)].map(m => m[0]).filter(c => !/^#(eee|666)$/.test(c)), [], 'only fallbacks');
 });
 
 function codeDir(dir, version) {

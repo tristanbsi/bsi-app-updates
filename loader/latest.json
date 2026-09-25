@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.2.3",
-  "notes": "Design sweep: clearer To pack buttons and Send pack numbers, a solid outline on the selected case, distinct colours, readable sizes, and keyboard and contrast fixes.",
-  "file": "Loader-0.2.3.ldupdate",
-  "sha256": "09665a5acd8a25b8f606365cddea48a095a01a5c7d87883d0d314022662307b5",
-  "size": 681322,
-  "released": "2026-09-25T00:02:16.020Z",
+  "version": "0.3.0",
+  "notes": "When cases come off and where they go, Which truck do I need?, fillers and max weight on top, Pack the rest options, tape measure, floor labels, hide (H), step through the load, a steps page in the PDF, and QR codes on pack labels.",
+  "file": "Loader-0.3.0.ldupdate",
+  "sha256": "3b570500103c34c19cd496a24794d8a0f9c7552a081e1ab1ec17f861bd3835d1",
+  "size": 703177,
+  "released": "2026-09-25T00:26:34.095Z",
   "minShell": "0.1.0",
-  "sig": "dJ5HzhWI3vu7CnLPkvJ0gqaoj6o2R1KanFIrlkPwg5c2NLHlznBbrizBgiHyZp6jXyklJRWWwzusaOqFyyTzBw=="
+  "sig": "6H50ssRKllrUIhb1DYaH6WZHCD7LfzxgWfuSdvCQoTtZjNo68rRAwh3iuJ5i1P/zVZIWXBX+QNWn18ZAGoGCBQ=="
 }

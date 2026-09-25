@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.3.1",
-  "notes": "Suggest load bars and straps; Pack the rest scores whole plans, tries saved rows flipped, and offers the next truck for what doesn't fit.",
-  "file": "Loader-0.3.1.ldupdate",
-  "sha256": "0fbda6373672d3c7c0bce58a55f67a9904570c491d6129fb314cb095dbfaa71a",
-  "size": 705787,
-  "released": "2026-09-25T00:45:48.988Z",
+  "version": "0.4.0",
+  "notes": "Unloading at the venue: a new page in the PDF lists the cases the way they come off (last in, first out), grouped by where each one goes, so one cart run goes to one place. Use PatchMap zones (under the To pack list, when the order has a PatchMap rig imported in ShopCall's Order Builder): the rig's stage zones (FOH, Stage left…) go onto the cases holding that gear. The unloading page groups by them, and they go to ShopCall with the pack numbers. Save to gig folder (File menu, or the button after Send pack numbers): the load plan PDF and a `.loader` file per truck go into the order's own…",
+  "file": "Loader-0.4.0.ldupdate",
+  "sha256": "9873f3b3b072ea9a16488bb0d8aace18f395d5ca33b00504905f1fc8424f3053",
+  "size": 814351,
+  "released": "2026-09-25T17:17:09.039Z",
   "minShell": "0.1.0",
-  "sig": "zSEfQvpXa4N/lSZ2Nyqdp3FazhGCPhRI1WuU3QDrqSt7LpyOphWhiHuxleboEgr4Vpm2CRMR8rhKAtYn2X5aCA=="
+  "sig": "Jga9JuFwvyAuKiN+hbERfWd0MTNmCj5OmvTtcXEQzSF3iIp3dgxbZmaQzwwrGBfoYWMlzYejpuQ0nsHgF61fCQ=="
 }

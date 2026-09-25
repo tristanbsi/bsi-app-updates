@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.15",
-  "notes": "Fixed: a broken link or a malformed message from someone on the network could freeze the caller behind an error box until OK. Also new: a show-Mac benchmark (StandBy Benchmark folder on Drive).",
-  "file": "StandBy-0.2.15.sbupdate",
-  "sha256": "33d48c45b4d47d68c73ee17bf53403dd896b820f74f9790af0307176c3893ffc",
-  "size": 685517,
-  "released": "2026-09-24T22:16:00.906Z",
+  "version": "0.2.16",
+  "notes": "An unexpected error no longer freezes the caller. Until now any error StandBy didn't expect put up a \"JavaScript error\" box: GO stopped, every screen showed HOST LOST until someone clicked OK. StandBy now writes it to a log, shows an amber banner (*Something went wrong inside StandBy. The show is still running.*) and carries on. Help › Show Error Log opens the log. New: Show › Pre-show Check… (and a Pre-show check button on the caller screen until the first GO). In a few seconds it looks at this Mac's address against the Sheet's HOST_IP, the follow port, Bonjour, the Local Network…",
+  "file": "StandBy-0.2.16.sbupdate",
+  "sha256": "7e588c6a0aba400866a733953b770d209e24058248cb840e3d12d39ee44531d5",
+  "size": 719709,
+  "released": "2026-09-25T23:30:14.280Z",
   "minShell": "0.2.0",
-  "sig": "A7NvvFQPH61u5C4nGFRNZXFH+VAYj1EehUWDLgUrLkc8WFA4f+q2Om56e0AGXcNjSjAT+gd8qGpW8hNsDuzsBw=="
+  "sig": "62IFrlD9ErSrD7Winwzgyt4SuuDmDDAjtHYPBG2ddMTk7G9DrBZYgZtlsk/0lvjtSJxZv+Wl1PKQ4Qa3XYHaDw=="
 }

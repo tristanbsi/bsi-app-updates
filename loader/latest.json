@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.3.0",
-  "notes": "When cases come off and where they go, Which truck do I need?, fillers and max weight on top, Pack the rest options, tape measure, floor labels, hide (H), step through the load, a steps page in the PDF, and QR codes on pack labels.",
-  "file": "Loader-0.3.0.ldupdate",
-  "sha256": "3b570500103c34c19cd496a24794d8a0f9c7552a081e1ab1ec17f861bd3835d1",
-  "size": 703177,
-  "released": "2026-09-25T00:26:34.095Z",
+  "version": "0.3.1",
+  "notes": "Suggest load bars and straps; Pack the rest scores whole plans, tries saved rows flipped, and offers the next truck for what doesn't fit.",
+  "file": "Loader-0.3.1.ldupdate",
+  "sha256": "0fbda6373672d3c7c0bce58a55f67a9904570c491d6129fb314cb095dbfaa71a",
+  "size": 705787,
+  "released": "2026-09-25T00:45:48.988Z",
   "minShell": "0.1.0",
-  "sig": "6H50ssRKllrUIhb1DYaH6WZHCD7LfzxgWfuSdvCQoTtZjNo68rRAwh3iuJ5i1P/zVZIWXBX+QNWn18ZAGoGCBQ=="
+  "sig": "zSEfQvpXa4N/lSZ2Nyqdp3FazhGCPhRI1WuU3QDrqSt7LpyOphWhiHuxleboEgr4Vpm2CRMR8rhKAtYn2X5aCA=="
 }

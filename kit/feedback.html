@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+<title>Send Feedback</title>
+<style>
+  :root { --bg:#F4F5F1; --panel:#FFFFFF; --ink:#1B1F24; --muted:#697077; --line:#CFD3CB; --accent:#1E8C82; --accent-ink:#fff; --danger:#C93030; --ok:#1E7A45; color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1C2025; --panel:#262B31; --ink:#E6E8E3; --muted:#98A0A8; --line:#3A4149; --accent:#2BA89C; --danger:#F07070; --ok:#5CC98A; } }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--bg); color: var(--ink); font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+         padding: 18px 20px 16px; display: flex; flex-direction: column; gap: 10px; -webkit-user-select: none; }
+  h1 { font-size: 15px; font-weight: 600; margin: 0; }
+  textarea { flex: 1; width: 100%; resize: none; padding: 9px 10px; border: 1px solid var(--line); border-radius: 7px;
+             background: var(--panel); color: var(--ink); font: inherit; -webkit-user-select: text; }
+  textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; }
+  .note { color: var(--muted); font-size: 12px; margin: 0; }
+  .row { display: flex; align-items: center; gap: 8px; }
+  #status { flex: 1; font-size: 12px; min-height: 16px; }
+  #status.err { color: var(--danger); } #status.ok { color: var(--ok); } #status.busy { color: var(--muted); }
+  button { font: inherit; padding: 5px 14px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
+  button:disabled { opacity: .5; }
+</style></head>
+<body>
+  <h1>Send feedback about <span id="appName">this app</span></h1>
+  <textarea id="msg" maxlength="4000" placeholder="What's working, what isn't, what you'd like" autofocus></textarea>
+  <p class="note">Your name and the screen you were on go with it.</p>
+  <div class="row">
+    <div id="status" role="status" aria-live="polite"></div>
+    <button id="cancel">Cancel</button>
+    <button id="send" class="primary">Send</button>
+  </div>
+<script>
+  const F = window.feedback, $ = id => document.getElementById(id);
+  if (F.appName) $('appName').textContent = F.appName;
+  // the app's own colours, handed in by feedback.js (kit): light set, and a dark set for dark mode
+  const applyPalette = () => {
+    const p = (F.palette && (matchMedia('(prefers-color-scheme: dark)').matches ? F.palette.dark : F.palette.light)) || {};
+    const map = { bg: '--bg', panel: '--panel', ink: '--ink', muted: '--muted', line: '--line', accent: '--accent', accentInk: '--accent-ink', danger: '--danger', ok: '--ok' };
+    for (const k in map) if (p[k]) document.documentElement.style.setProperty(map[k], String(p[k]));
+  };
+  applyPalette(); matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyPalette);
+  const status = (t, cls) => { $('status').textContent = t; $('status').className = cls || ''; };
+  let sending = false;
+  async function go() {
+    if (sending) return;
+    const text = $('msg').value.trim();
+    if (!text) { status('Write the feedback first.', 'err'); $('msg').focus(); return; }
+    sending = true; $('send').disabled = true; $('msg').readOnly = true; status('Sending…', 'busy');
+    let r; try { r = await F.send(text, F.context); } catch (e) { r = { ok: false, error: 'Not sent. Your text is still here.' }; }
+    sending = false; $('msg').readOnly = false;
+    if (r && r.ok) { status('Sent. Thanks!', 'ok'); $('msg').value = ''; setTimeout(() => F.close(), 1200); }
+    else { $('send').disabled = false; status((r && r.error) || 'Not sent.', 'err'); $('msg').focus(); }
+  }
+  $('send').onclick = go;
+  $('cancel').onclick = () => F.close();
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !sending) F.close();
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); go(); }
+  });
+</script>
+</body></html>

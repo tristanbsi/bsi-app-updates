@@ -1,0 +1,19 @@
+# Copy this file to .github/workflows/test.yml in an app repo. It runs the app's tests on every push and pull
+# request. For a repo whose package.json is in a subfolder (StandBy: host/), set `working-directory` below.
+name: Tests
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm test

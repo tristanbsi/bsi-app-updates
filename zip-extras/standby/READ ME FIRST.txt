@@ -1,0 +1,21 @@
+StandBy — read me first
+
+INSTALL
+1. Drag StandBy.app into your Applications folder.
+2. The first time, right-click (or Control-click) StandBy and choose Open, then Open again in the box that appears.
+   macOS shows a warning because StandBy comes from BSI, not the App Store. You only do this once.
+   If it says the app "can't be opened", open System Settings › Privacy & Security, scroll down, and click Open Anyway.
+3. macOS may ask if StandBy can find devices on the local network. Say Allow: that is how the other Macs, phones and Stream Decks follow the show.
+4. Open the sample show (Show › Load Show…, pick the CSV in this folder) to practise before a real one.
+
+UPDATES
+StandBy checks for new versions by itself. When one is ready it tells you; StandBy › Check for Updates… installs it.
+You never need to download this zip again. If an update misbehaves, StandBy › Go Back to Previous Version… undoes it.
+
+HELP
+Help › StandBy Manual explains every screen. Help › Send Feedback… sends a note straight to Tristan.
+
+TROUBLE
+- "Can't be opened because Apple cannot check it": use the right-click › Open steps above.
+- Nothing happens when it opens: quit it from the Dock and open it again.
+- Still stuck: send Tristan a note (info@bsiproduction.com) with what you clicked and what you saw.

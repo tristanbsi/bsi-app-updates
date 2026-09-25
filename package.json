@@ -1,0 +1,11 @@
+{
+  "name": "bsi-app-updates",
+  "private": true,
+  "description": "BSI Production's public update feed, shared app kit and release tooling",
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\"",
+    "status": "node tools/release.js status",
+    "sync-kit": "node tools/sync-kit.js",
+    "check-kit": "node tools/sync-kit.js --check"
+  }
+}

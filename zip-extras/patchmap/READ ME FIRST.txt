@@ -1,0 +1,20 @@
+PatchMap — read me first
+
+INSTALL
+1. Drag PatchMap.app into your Applications folder.
+2. The first time, right-click (or Control-click) PatchMap and choose Open, then Open again in the box that appears.
+   macOS shows a warning because PatchMap comes from BSI, not the App Store. You only do this once.
+   If it says the app "can't be opened", open System Settings › Privacy & Security, scroll down, and click Open Anyway.
+3. PatchMap starts with BSI's gear library. Your rigs are saved on this Mac (File › Backup… keeps a copy).
+
+UPDATES
+PatchMap checks for new versions by itself. When one is ready it tells you; PatchMap › Check for Updates… installs it.
+You never need to download this zip again. If an update misbehaves, PatchMap › Go Back to Previous Version… undoes it.
+
+HELP
+Help › PatchMap Manual explains every screen. Help › Send Feedback… sends a note straight to Tristan.
+
+TROUBLE
+- "Can't be opened because Apple cannot check it": use the right-click › Open steps above.
+- Nothing happens when it opens: quit it from the Dock and open it again.
+- Still stuck: send Tristan a note (info@bsiproduction.com) with what you clicked and what you saw.

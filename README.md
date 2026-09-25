@@ -16,6 +16,8 @@ standby/latest.json
 standby/StandBy-X.Y.Z.sbupdate
 loader/latest.json
 loader/Loader-X.Y.Z.ldupdate
+trusstape/latest.json
+trusstape/TrussTape-X.Y.Z.ttupdate
 kit/                          the shared app kit: updater, app-updates core, feedback window, changelog page, CI template
 tools/release.js              the one release command (checks, tests, builds, signs, publishes, verifies)
 tools/sync-kit.js             copies the kit into each app; --check reports drift

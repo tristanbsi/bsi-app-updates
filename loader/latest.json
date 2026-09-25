@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.2.2",
-  "notes": "200, 300 and 350 cases only tip the tall way, onto their end.",
-  "file": "Loader-0.2.2.ldupdate",
-  "sha256": "378e922fc625c2259b5aacb87fd7bb7e5b03c9b40ed0d1327d1183a6e71985d1",
-  "size": 678682,
-  "released": "2026-09-24T23:30:18.193Z",
+  "version": "0.2.3",
+  "notes": "Design sweep: clearer To pack buttons and Send pack numbers, a solid outline on the selected case, distinct colours, readable sizes, and keyboard and contrast fixes.",
+  "file": "Loader-0.2.3.ldupdate",
+  "sha256": "09665a5acd8a25b8f606365cddea48a095a01a5c7d87883d0d314022662307b5",
+  "size": 681322,
+  "released": "2026-09-25T00:02:16.020Z",
   "minShell": "0.1.0",
-  "sig": "e37054NOMSfKxuU9a0q4MYr07FMZC+tdu2WgMVU67+D1pFgD/LRxcC/GLFgoP5Duou0DknTg93a8dYSf6u+5DQ=="
+  "sig": "dJ5HzhWI3vu7CnLPkvJ0gqaoj6o2R1KanFIrlkPwg5c2NLHlznBbrizBgiHyZp6jXyklJRWWwzusaOqFyyTzBw=="
 }

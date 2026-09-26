@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.0",
-  "notes": "Unloading at the venue: a new page in the PDF lists the cases the way they come off (last in, first out), grouped by where each one goes, so one cart run goes to one place. Use PatchMap zones (under the To pack list, when the order has a PatchMap rig imported in ShopCall's Order Builder): the rig's stage zones (FOH, Stage left…) go onto the cases holding that gear. The unloading page groups by them, and they go to ShopCall with the pack numbers. Save to gig folder (File menu, or the button after Send pack numbers): the load plan PDF and a `.loader` file per truck go into the order's own…",
-  "file": "Loader-0.4.0.ldupdate",
-  "sha256": "9873f3b3b072ea9a16488bb0d8aace18f395d5ca33b00504905f1fc8424f3053",
-  "size": 814351,
-  "released": "2026-09-25T17:17:09.039Z",
+  "version": "0.4.1",
+  "notes": "Switching trucks now redraws the truck straight away. Before, the old truck's outline stayed until you reopened the load, so cases could look like they sat past the doors. This goes for Choose a truck › Use it, the Truck list, and ⌘Z / ⇧⌘Z.",
+  "file": "Loader-0.4.1.ldupdate",
+  "sha256": "9e217b935ed8e0395defc4722d96bacf26b7c32cab34a066ae9825d7f81cbc3c",
+  "size": 814401,
+  "released": "2026-09-26T14:39:04.522Z",
   "minShell": "0.1.0",
-  "sig": "Jga9JuFwvyAuKiN+hbERfWd0MTNmCj5OmvTtcXEQzSF3iIp3dgxbZmaQzwwrGBfoYWMlzYejpuQ0nsHgF61fCQ=="
+  "sig": "s2zaghBlHynHS75nvjYEKIk/W+j9s28gWj4un89eN7SkfNnKoqViDReJxZeqzYBO2JrVOsIhjlTeM13EZBFTDA=="
 }

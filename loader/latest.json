@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.1",
-  "notes": "Switching trucks now redraws the truck straight away. Before, the old truck's outline stayed until you reopened the load, so cases could look like they sat past the doors. This goes for Choose a truck › Use it, the Truck list, and ⌘Z / ⇧⌘Z.",
-  "file": "Loader-0.4.1.ldupdate",
-  "sha256": "9e217b935ed8e0395defc4722d96bacf26b7c32cab34a066ae9825d7f81cbc3c",
-  "size": 814401,
-  "released": "2026-09-26T14:39:04.522Z",
+  "version": "0.4.2",
+  "notes": "How high the crew lifts (Truck setup in the load panel, or the truck editor): the highest a case gets lifted onto a stack in that truck, floor to the bottom of the case. Pack the rest, + and Choose a truck don't stack a case higher, and a case put there by hand says so. Blank (the default) is no limit. Pick cases from the keyboard: [ and ] select the previous and next case in loading order, so turn, tip, nudge, hide and take out all work without the mouse. The truck view takes Tab focus, and VoiceOver reads which case is selected and where it sits (\"#5 of 39: PLM 10KQ 1, 4′ from the nose ·…",
+  "file": "Loader-0.4.2.ldupdate",
+  "sha256": "4063afb0512cb297e31ac836a25b99e3c15501e59833273f0922ccf556aebd37",
+  "size": 816672,
+  "released": "2026-09-28T20:33:28.933Z",
   "minShell": "0.1.0",
-  "sig": "s2zaghBlHynHS75nvjYEKIk/W+j9s28gWj4un89eN7SkfNnKoqViDReJxZeqzYBO2JrVOsIhjlTeM13EZBFTDA=="
+  "sig": "pE0G1JV+MXz3TuDGf7vcEgd73N2kHujC6PvhXX1gUidWPppqjtgrNZdkU39LdfesKujQtUjOIlzm5dMFLZt7Cg=="
 }

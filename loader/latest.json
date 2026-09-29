@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.2",
-  "notes": "How high the crew lifts (Truck setup in the load panel, or the truck editor): the highest a case gets lifted onto a stack in that truck, floor to the bottom of the case. Pack the rest, + and Choose a truck don't stack a case higher, and a case put there by hand says so. Blank (the default) is no limit. Pick cases from the keyboard: [ and ] select the previous and next case in loading order, so turn, tip, nudge, hide and take out all work without the mouse. The truck view takes Tab focus, and VoiceOver reads which case is selected and where it sits (\"#5 of 39: PLM 10KQ 1, 4′ from the nose ·…",
-  "file": "Loader-0.4.2.ldupdate",
-  "sha256": "4063afb0512cb297e31ac836a25b99e3c15501e59833273f0922ccf556aebd37",
-  "size": 816672,
-  "released": "2026-09-28T20:33:28.933Z",
+  "version": "0.4.3",
+  "notes": "Cases from the order's Case column show their ID, big (308, 360, HAMPER-2…) in the truck, with the order's Case Contents text (what prints in the case label's CONT box) under it, instead of the first thing inside. Gear that is its own case (a kart, SLS) still shows its name. The CONT text needs BSI Link updated. A case the order lists as a line of its own and names in its Case column (a \"27\" line, then cables in 27) is one case holding both, instead of \"listed twice\". Import Cases… reads a Tips onto column (never, side, end or any), the way the case editor says it. \"Never\" is this side up.…",
+  "file": "Loader-0.4.3.ldupdate",
+  "sha256": "5d7cc2acef3a881984bcdb0aba058ebcf242b0c96a36b3d8901f404aef22ab04",
+  "size": 818330,
+  "released": "2026-09-29T20:52:36.382Z",
   "minShell": "0.1.0",
-  "sig": "pE0G1JV+MXz3TuDGf7vcEgd73N2kHujC6PvhXX1gUidWPppqjtgrNZdkU39LdfesKujQtUjOIlzm5dMFLZt7Cg=="
+  "sig": "X6Un6Yay7ff4LJIymr/ckvKVL4zT2/Qivm4gJ0pIxOMJO01WuD/Z9SRV1T36JriN5iFTlE6vXHJnf8WZMHLlAw=="
 }

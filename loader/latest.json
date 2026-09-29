@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.4",
-  "notes": "Tipped cases stack on tipped cases. A case's wheels are on its own bottom and its wheel cups in its lid, so tipped (a 300 on its end) its wheels point sideways and the wheel-cup rule no longer applies: a tipped 300 goes on a tipped 300, by hand and in Pack the rest. A case standing on its wheels still needs a matching case's cups, and a tipped case's cups no longer count as being on top.",
-  "file": "Loader-0.4.4.ldupdate",
-  "sha256": "144ff1c8f012dc394bc04e54a606eecee7306bb0e7f77caeab06027bef1018e9",
-  "size": 818533,
-  "released": "2026-09-29T21:03:14.553Z",
+  "version": "0.4.6",
+  "notes": "R turns a whole stack. Select the bottom case of a stack (or several cases) and R turns them all a quarter turn together, still stacked and lined up, instead of having to unstack, turn each one and restack. ⌘Z takes it back in one go. Turning and tipping find room. R and T turn a case around its middle at its own height, never up onto a neighbour, and shuffle it over up to 2 feet to fit: a tipped 200 goes back on its wheels in the gap it has, and a nearly square case (24 × 23½) wedged between others turns instead of being refused. Upside down. A new case setting, Can go upside down (case…",
+  "file": "Loader-0.4.6.ldupdate",
+  "sha256": "3672fd810d5bdb33e28729af7bed87b53b5c1f0e9d2712044ef88acf2fab82ee",
+  "size": 823212,
+  "released": "2026-09-29T21:25:34.213Z",
   "minShell": "0.1.0",
-  "sig": "R/IhI1BrvyvL/nQNUfnQ984SGn/FXnzlLwFJ+G3wTa0/qs5vnY68fI+y3G7iV+NE8l0clNd0UF52HbEkTaTSCw=="
+  "sig": "uOfW0zE8cVaKg9efR+LUnlNDRt16/3yjjHBzmWiFJlmYFMOb+5Uw2MjRRh8BnP4tRhDdoLa7mEVKfWaykfCRDQ=="
 }

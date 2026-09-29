@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.3",
-  "notes": "Cases from the order's Case column show their ID, big (308, 360, HAMPER-2…) in the truck, with the order's Case Contents text (what prints in the case label's CONT box) under it, instead of the first thing inside. Gear that is its own case (a kart, SLS) still shows its name. The CONT text needs BSI Link updated. A case the order lists as a line of its own and names in its Case column (a \"27\" line, then cables in 27) is one case holding both, instead of \"listed twice\". Import Cases… reads a Tips onto column (never, side, end or any), the way the case editor says it. \"Never\" is this side up.…",
-  "file": "Loader-0.4.3.ldupdate",
-  "sha256": "5d7cc2acef3a881984bcdb0aba058ebcf242b0c96a36b3d8901f404aef22ab04",
-  "size": 818330,
-  "released": "2026-09-29T20:52:36.382Z",
+  "version": "0.4.4",
+  "notes": "Tipped cases stack on tipped cases. A case's wheels are on its own bottom and its wheel cups in its lid, so tipped (a 300 on its end) its wheels point sideways and the wheel-cup rule no longer applies: a tipped 300 goes on a tipped 300, by hand and in Pack the rest. A case standing on its wheels still needs a matching case's cups, and a tipped case's cups no longer count as being on top.",
+  "file": "Loader-0.4.4.ldupdate",
+  "sha256": "144ff1c8f012dc394bc04e54a606eecee7306bb0e7f77caeab06027bef1018e9",
+  "size": 818533,
+  "released": "2026-09-29T21:03:14.553Z",
   "minShell": "0.1.0",
-  "sig": "X6Un6Yay7ff4LJIymr/ckvKVL4zT2/Qivm4gJ0pIxOMJO01WuD/Z9SRV1T36JriN5iFTlE6vXHJnf8WZMHLlAw=="
+  "sig": "R/IhI1BrvyvL/nQNUfnQ984SGn/FXnzlLwFJ+G3wTa0/qs5vnY68fI+y3G7iV+NE8l0clNd0UF52HbEkTaTSCw=="
 }

@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.10",
-  "notes": "No more flash on every change. Each change redrew every case in the truck from scratch, which blanked all the labels for a frame and made the view look like it jumped. Now only the cases that actually changed are redrawn; the rest just move. The load bar and strap panel's buttons (Onto the row in front, Take it out) stay inside the panel instead of running off its right edge; long button names wrap.",
-  "file": "Loader-0.4.10.ldupdate",
-  "sha256": "f1a01ace600fe4b37203777d936f17542fca6c8795f110fbe57c34f1256bf2c4",
-  "size": 827493,
-  "released": "2026-09-30T01:21:51.435Z",
+  "version": "0.4.11",
+  "notes": "Learn From This Load (Load menu): pack a gig by hand, and Pack the rest learns from it. Its rows (tick the ones to keep) are saved, the order the case types go in becomes the pack order, and you set how the crew straps. Tried on the Nelly @ TAGS truck: Pack the rest then built 4 of the 11 rows exactly as they were packed by hand, up from none. Straps every row, or every other row: Suggest bars and straps can put a strap across the back of each row (or every other one), the way the crew does it, as well as on stacks open at the back. Set it in Set pack order, or when learning from a load. A…",
+  "file": "Loader-0.4.11.ldupdate",
+  "sha256": "e5d4835590353554ca7896508be39cf17b27807aa07ac30d8e0e340837600bb7",
+  "size": 831372,
+  "released": "2026-09-30T01:46:27.242Z",
   "minShell": "0.1.0",
-  "sig": "5I7E1AiSiUOxCWGSFhI1PH701vR7NFJJA20FrR9tJQusa+2odOB9Bl9Clk0l/M0CQQINi4k2JMJS4YleJdyrBQ=="
+  "sig": "+eBVvvDnntuumxqPVmBWhED/h6xC7yvqZwOfD5Jrwfw6SJ8rmNOPnKvigSqsne8tbXW+DUR3ecN9kF/jB2dgAw=="
 }

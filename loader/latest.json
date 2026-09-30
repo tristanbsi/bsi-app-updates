@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.6",
-  "notes": "R turns a whole stack. Select the bottom case of a stack (or several cases) and R turns them all a quarter turn together, still stacked and lined up, instead of having to unstack, turn each one and restack. ⌘Z takes it back in one go. Turning and tipping find room. R and T turn a case around its middle at its own height, never up onto a neighbour, and shuffle it over up to 2 feet to fit: a tipped 200 goes back on its wheels in the gap it has, and a nearly square case (24 × 23½) wedged between others turns instead of being refused. Upside down. A new case setting, Can go upside down (case…",
-  "file": "Loader-0.4.6.ldupdate",
-  "sha256": "3672fd810d5bdb33e28729af7bed87b53b5c1f0e9d2712044ef88acf2fab82ee",
-  "size": 823212,
-  "released": "2026-09-29T21:25:34.213Z",
+  "version": "0.4.10",
+  "notes": "No more flash on every change. Each change redrew every case in the truck from scratch, which blanked all the labels for a frame and made the view look like it jumped. Now only the cases that actually changed are redrawn; the rest just move. The load bar and strap panel's buttons (Onto the row in front, Take it out) stay inside the panel instead of running off its right edge; long button names wrap.",
+  "file": "Loader-0.4.10.ldupdate",
+  "sha256": "f1a01ace600fe4b37203777d936f17542fca6c8795f110fbe57c34f1256bf2c4",
+  "size": 827493,
+  "released": "2026-09-30T01:21:51.435Z",
   "minShell": "0.1.0",
-  "sig": "uOfW0zE8cVaKg9efR+LUnlNDRt16/3yjjHBzmWiFJlmYFMOb+5Uw2MjRRh8BnP4tRhDdoLa7mEVKfWaykfCRDQ=="
+  "sig": "5I7E1AiSiUOxCWGSFhI1PH701vR7NFJJA20FrR9tJQusa+2odOB9Bl9Clk0l/M0CQQINi4k2JMJS4YleJdyrBQ=="
 }

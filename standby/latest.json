@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.16",
-  "notes": "An unexpected error no longer freezes the caller. Until now any error StandBy didn't expect put up a \"JavaScript error\" box: GO stopped, every screen showed HOST LOST until someone clicked OK. StandBy now writes it to a log, shows an amber banner (*Something went wrong inside StandBy. The show is still running.*) and carries on. Help › Show Error Log opens the log. New: Show › Pre-show Check… (and a Pre-show check button on the caller screen until the first GO). In a few seconds it looks at this Mac's address against the Sheet's HOST_IP, the follow port, Bonjour, the Local Network…",
-  "file": "StandBy-0.2.16.sbupdate",
-  "sha256": "7e588c6a0aba400866a733953b770d209e24058248cb840e3d12d39ee44531d5",
-  "size": 719709,
-  "released": "2026-09-25T23:30:14.280Z",
+  "version": "0.2.17",
+  "notes": "Pick the speaker timer's flash colours. On the prompter, Speaker timer › *Time left, allotment, warning, colours, size and place* now has Over-time flash (red until now) and Flash button (white until now), each with a colour picker and a Default button. The talent screen and every preview blink in the picked colour; the choice is kept through a relaunch.",
+  "file": "StandBy-0.2.17.sbupdate",
+  "sha256": "7e3763c462566662c6ee685763424c667081570d1e6170f0501e2b256e5659b8",
+  "size": 720288,
+  "released": "2026-10-05T16:38:39.007Z",
   "minShell": "0.2.0",
-  "sig": "62IFrlD9ErSrD7Winwzgyt4SuuDmDDAjtHYPBG2ddMTk7G9DrBZYgZtlsk/0lvjtSJxZv+Wl1PKQ4Qa3XYHaDw=="
+  "sig": "Rui5XDUZW8LkO1aABHcEaJzrLzfdL5td+kNcWqGhzVb14SKRRuHNr/VDobtKPHHGffc2B/88YsVX2LK9506mDA=="
 }

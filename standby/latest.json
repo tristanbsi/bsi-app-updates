@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.17",
-  "notes": "Pick the speaker timer's flash colours. On the prompter, Speaker timer › *Time left, allotment, warning, colours, size and place* now has Over-time flash (red until now) and Flash button (white until now), each with a colour picker and a Default button. The talent screen and every preview blink in the picked colour; the choice is kept through a relaunch.",
-  "file": "StandBy-0.2.17.sbupdate",
-  "sha256": "7e3763c462566662c6ee685763424c667081570d1e6170f0501e2b256e5659b8",
-  "size": 720288,
-  "released": "2026-10-05T16:38:39.007Z",
+  "version": "0.2.18",
+  "notes": "Show › Open ROS Template on the caller opens the BSI ROS template Google Sheet in your browser. Make a copy of it for each show (File › Make a copy).",
+  "file": "StandBy-0.2.18.sbupdate",
+  "sha256": "a67e236ecc83571cc79e6752e6c8e290ccb396af512af547afa702a7a0d0f592",
+  "size": 720668,
+  "released": "2026-10-07T21:24:13.019Z",
   "minShell": "0.2.0",
-  "sig": "Rui5XDUZW8LkO1aABHcEaJzrLzfdL5td+kNcWqGhzVb14SKRRuHNr/VDobtKPHHGffc2B/88YsVX2LK9506mDA=="
+  "sig": "ZurI9cXcNbU8uwh72JhjTHT1yXqVZ8f2a5L44Hm7NIo/d+5XMZwC+Fl8iU20hoQFB1KO/+3TePzdAmMGvqqUDA=="
 }

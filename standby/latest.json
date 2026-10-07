@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.19",
-  "notes": "New: the ROS builder. Show › ROS Builder… (⇧⌘N) builds a running order right in StandBy when nobody else needs the Sheet: the template's header, departments and columns, start and end times and section totals worked out as you type, Enter for the next cue (numbered for you), row colours, and StandBy's checks as you go. Save it on the Mac (Documents › StandBy Shows), Load into Caller, start from any past show, export a CSV in the template's layout, or print it. Show › New ROS from Template… (was Open ROS Template) opens Google's *Make a copy* page for the BSI ROS template, so you start with a…",
-  "file": "StandBy-0.2.19.sbupdate",
-  "sha256": "b0b46aef994d8d3b6ed8cf4f20f3876b8603e2d0cd45eb1fd5c508a30772e144",
-  "size": 737006,
-  "released": "2026-10-07T22:33:03.046Z",
+  "version": "0.2.20",
+  "notes": "ROS builder on a Stream Deck. Companion module 1.0.5 adds a ROS builder group: OPEN BUILDER, + CUE, + WITH, + SECTION, DUP ROW, MOVE ▲ ▼, ROW ▲ ▼, SAVE and PRINT. They act on the builder's current row, now marked gold at its left edge (the one last clicked, added or moved). No delete button on purpose. Re-import the module from StandBy › Save Companion Module to Downloads. Easier to find in the ROS builder: each row's ↑ ↓ + ✕ buttons are bigger and stay pinned at the right edge, and the column titles are bigger.",
+  "file": "StandBy-0.2.20.sbupdate",
+  "sha256": "6829f24d3401c7b30a1ab77be1768053200a153de50e5289cc0d41dab2e75c10",
+  "size": 739837,
+  "released": "2026-10-07T22:40:41.277Z",
   "minShell": "0.2.0",
-  "sig": "CDZj4dTtxXNB5L10TV/tnqmcuGjtjTBKfKPK95I+U1G42mhTJzxDmFmeWtEeEuCs/vLTe1NSyhWXB2c1gdfdBg=="
+  "sig": "xcHpi/Mw6ILVYVXMUFEfsIuHqrwwgwiX0thhdCk6D8I1pBupEiMoBqi4L3u/Urz6cI+CphTftwFTuCfy1KcYBQ=="
 }

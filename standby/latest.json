@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.22",
-  "notes": "The ROS builder, laid out like QLab 5. A masthead shows the current row big (cue, what happens, start → end, who, where, notes and department entries) beside the show's planned end, run time and counts. Under it a timeline strip shows the whole show, a block per section; click it to jump there. A footer holds Edit / Review, the cue and section counts, the checks (✕ to fix, ⚠ to check; click to open the list), Colour, Departments, row size and the Inspector button. Inspector (⌘I) at the bottom: Basics, Timing, Departments, Notes, Colour & flag for the current row. Departments show as chips in…",
-  "file": "StandBy-0.2.22.sbupdate",
-  "sha256": "645e493a2f69a233524a038634c838525bafd6762580874126f96f1094d749f4",
-  "size": 767567,
-  "released": "2026-10-08T01:02:13.238Z",
+  "version": "0.2.23",
+  "notes": "The ROS builder after a fifth critique (29/40 on the new layout). More room for rows: the show's details fold into one line under the file bar (*Test Hall · Fri, Oct 16 · starts 7:00 PM · … · Edit details ▾*; a new show opens them), the inspector is only as tall as its tab needs, and its Basics tab puts Cue #, Type, Who and Where on one line. A clock time that doesn't fit says by how much: *Row 11, cue 8 is pinned to 7:35 PM, but the cues before it run until 7:36 PM: 1 min over. Shorten them, or change its clock time.* The section that runs long shows *1 min over* under its total, and the…",
+  "file": "StandBy-0.2.23.sbupdate",
+  "sha256": "bc37895b249fe405617392a639ad7fbc92ffa79b8dfd4b261afdd7b127e9bcfe",
+  "size": 771788,
+  "released": "2026-10-08T01:31:14.413Z",
   "minShell": "0.2.0",
-  "sig": "Ga7M70/QfpO6V6HZfP+tQU4Yu3XRC+TDuXHz4wsUjdznO/F7GSnnz13xCtw2mLnQCxPR0FQ+R/YN/Lpfrp/0AQ=="
+  "sig": "+iyKWGbtMZL2KEHi4GGu4KvHA+Uw0/ljk28mwQPGYrSRgemchLEvhf1Sor+KxRXwrq2QQ/wNZ0OTfZLStOaiCQ=="
 }

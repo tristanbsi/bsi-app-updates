@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.21",
-  "notes": "The ROS builder feels like the Sheet. Drag a column's edge to resize it (double-click to fit; widths kept on the Mac), with #, Cue #, Type and Description frozen on the left. Enter goes down a row like the Sheet (⌘Enter inserts a cue), ← → move between cells, long text wraps (Shift+Enter for a new line). Undo everything: ⌘Z / ⇧⌘Z for typing, deleted rows and removed departments, plus an Undo button after a delete. Paste from the Sheet: copy rows in the Sheet (or Excel) and paste them in as new rows, departments matched by name; ⌘C copies picked rows back out for the Sheet. Work on several…",
-  "file": "StandBy-0.2.21.sbupdate",
-  "sha256": "1ac34d21bb7dee02ef4caccd325c7c9fe3b77cd8fee2f5a6b1a90c3267b5b429",
-  "size": 755291,
-  "released": "2026-10-08T00:18:03.262Z",
+  "version": "0.2.22",
+  "notes": "The ROS builder, laid out like QLab 5. A masthead shows the current row big (cue, what happens, start → end, who, where, notes and department entries) beside the show's planned end, run time and counts. Under it a timeline strip shows the whole show, a block per section; click it to jump there. A footer holds Edit / Review, the cue and section counts, the checks (✕ to fix, ⚠ to check; click to open the list), Colour, Departments, row size and the Inspector button. Inspector (⌘I) at the bottom: Basics, Timing, Departments, Notes, Colour & flag for the current row. Departments show as chips in…",
+  "file": "StandBy-0.2.22.sbupdate",
+  "sha256": "645e493a2f69a233524a038634c838525bafd6762580874126f96f1094d749f4",
+  "size": 767567,
+  "released": "2026-10-08T01:02:13.238Z",
   "minShell": "0.2.0",
-  "sig": "zuQ1RdEI9jDZ0u2oZNfb9aoaTR/cRg3T2IrZb9tHrskVbLSxCjGwD8CnodQRVHQGgKrIlQnI4vEc/mX9JpspAw=="
+  "sig": "Ga7M70/QfpO6V6HZfP+tQU4Yu3XRC+TDuXHz4wsUjdznO/F7GSnnz13xCtw2mLnQCxPR0FQ+R/YN/Lpfrp/0AQ=="
 }

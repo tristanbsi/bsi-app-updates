@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.20",
-  "notes": "ROS builder on a Stream Deck. Companion module 1.0.5 adds a ROS builder group: OPEN BUILDER, + CUE, + WITH, + SECTION, DUP ROW, MOVE ▲ ▼, ROW ▲ ▼, SAVE and PRINT. They act on the builder's current row, now marked gold at its left edge (the one last clicked, added or moved). No delete button on purpose. Re-import the module from StandBy › Save Companion Module to Downloads. Easier to find in the ROS builder: each row's ↑ ↓ + ✕ buttons are bigger and stay pinned at the right edge, and the column titles are bigger.",
-  "file": "StandBy-0.2.20.sbupdate",
-  "sha256": "6829f24d3401c7b30a1ab77be1768053200a153de50e5289cc0d41dab2e75c10",
-  "size": 739837,
-  "released": "2026-10-07T22:40:41.277Z",
+  "version": "0.2.21",
+  "notes": "The ROS builder feels like the Sheet. Drag a column's edge to resize it (double-click to fit; widths kept on the Mac), with #, Cue #, Type and Description frozen on the left. Enter goes down a row like the Sheet (⌘Enter inserts a cue), ← → move between cells, long text wraps (Shift+Enter for a new line). Undo everything: ⌘Z / ⇧⌘Z for typing, deleted rows and removed departments, plus an Undo button after a delete. Paste from the Sheet: copy rows in the Sheet (or Excel) and paste them in as new rows, departments matched by name; ⌘C copies picked rows back out for the Sheet. Work on several…",
+  "file": "StandBy-0.2.21.sbupdate",
+  "sha256": "1ac34d21bb7dee02ef4caccd325c7c9fe3b77cd8fee2f5a6b1a90c3267b5b429",
+  "size": 755291,
+  "released": "2026-10-08T00:18:03.262Z",
   "minShell": "0.2.0",
-  "sig": "xcHpi/Mw6ILVYVXMUFEfsIuHqrwwgwiX0thhdCk6D8I1pBupEiMoBqi4L3u/Urz6cI+CphTftwFTuCfy1KcYBQ=="
+  "sig": "zuQ1RdEI9jDZ0u2oZNfb9aoaTR/cRg3T2IrZb9tHrskVbLSxCjGwD8CnodQRVHQGgKrIlQnI4vEc/mX9JpspAw=="
 }

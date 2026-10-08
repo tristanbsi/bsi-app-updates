@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.24",
-  "notes": "The ROS builder fills the window. In Review (no row buttons) or on a screen wider than its columns, Notes stretches to fill the space instead of leaving an empty strip. Make the inspector taller or shorter: drag its top edge (or put the focus on it and use ↑ ↓). The height is kept on this Mac; double-click the edge to fit it to its tab again. After a sixth critique (29/40): each row's ↑ ↓ + ✕ show only on the row under the mouse, the picked rows and the row being edited (✕ set apart from +). Tools ▾ in the top bar holds Find, Go to cue, the next thing to fix or check, and Renumber; Keys &…",
-  "file": "StandBy-0.2.24.sbupdate",
-  "sha256": "81b59983d6829b513760d89a1276d4a5420c6edd9d13e0da42b83cf10917e03e",
-  "size": 773482,
-  "released": "2026-10-08T01:43:03.659Z",
+  "version": "0.2.25",
+  "notes": "Make the ROS builder yours, and the caller follows. View ▾ › Columns… shows, hides and orders the columns (or drag a heading across the grid); Text size A− / A+ (80–160%); Light or dark: light for a bright office, in StandBy's own warm colours. The columns, their widths, the text size and the theme are saved in the show, and Load into Caller opens the caller the same way (its clocks and cards stay as they were). A new running order starts from the last layout used; undo never touches it. Review shows the department calls: each row writes out every department's entry (*LIGHTING Dims to 50%*),…",
+  "file": "StandBy-0.2.25.sbupdate",
+  "sha256": "e4b99b29c2e4016982c0567957e9fa41d88a02febe3bfb133365641802fe0d2c",
+  "size": 780263,
+  "released": "2026-10-08T12:33:48.172Z",
   "minShell": "0.2.0",
-  "sig": "8jZB7K4Gd9aed4r5Rj41Zmbuia40vWfJB+TnnKpDSS94LdM5x+BRTKNOWg6ejkjtZVQ/s55RbcPLxJNnCHscBA=="
+  "sig": "CyYRBnumh+2hktlkW3jZvBV49/BTd4EXRUm270SYh3cmAVYNV4b21B+5bzCuioTqnOUiIQpeik6cBXV9k3xkAw=="
 }

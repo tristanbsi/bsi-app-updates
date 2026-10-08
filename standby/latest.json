@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.25",
-  "notes": "Make the ROS builder yours, and the caller follows. View ▾ › Columns… shows, hides and orders the columns (or drag a heading across the grid); Text size A− / A+ (80–160%); Light or dark: light for a bright office, in StandBy's own warm colours. The columns, their widths, the text size and the theme are saved in the show, and Load into Caller opens the caller the same way (its clocks and cards stay as they were). A new running order starts from the last layout used; undo never touches it. Review shows the department calls: each row writes out every department's entry (*LIGHTING Dims to 50%*),…",
-  "file": "StandBy-0.2.25.sbupdate",
-  "sha256": "e4b99b29c2e4016982c0567957e9fa41d88a02febe3bfb133365641802fe0d2c",
-  "size": 780263,
-  "released": "2026-10-08T12:33:48.172Z",
+  "version": "0.2.26",
+  "notes": "StandBy asks when there's an update. A few seconds after it opens, a new version now brings up *Update StandBy to 0.2.x?* with Install & Restart or Later, instead of a Mac notification that was easy to miss (or that macOS never showed). Never while a show is in progress: then it waits for the next launch.",
+  "file": "StandBy-0.2.26.sbupdate",
+  "sha256": "9b1d7e9aab22dd094cdc73a84026b09509b27b058b1fc7c50b1c6770b32d9245",
+  "size": 780232,
+  "released": "2026-10-08T13:16:54.225Z",
   "minShell": "0.2.0",
-  "sig": "CyYRBnumh+2hktlkW3jZvBV49/BTd4EXRUm270SYh3cmAVYNV4b21B+5bzCuioTqnOUiIQpeik6cBXV9k3xkAw=="
+  "sig": "BywDaC7vRB0N7ZQZB7/0cGDtW6wUgPED900cMoG5oqqQny4CfVDxfOeL+eus2Li9plEfGPmR2HUEoeBgZrNOCQ=="
 }

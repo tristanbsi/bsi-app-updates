@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.23",
-  "notes": "The ROS builder after a fifth critique (29/40 on the new layout). More room for rows: the show's details fold into one line under the file bar (*Test Hall · Fri, Oct 16 · starts 7:00 PM · … · Edit details ▾*; a new show opens them), the inspector is only as tall as its tab needs, and its Basics tab puts Cue #, Type, Who and Where on one line. A clock time that doesn't fit says by how much: *Row 11, cue 8 is pinned to 7:35 PM, but the cues before it run until 7:36 PM: 1 min over. Shorten them, or change its clock time.* The section that runs long shows *1 min over* under its total, and the…",
-  "file": "StandBy-0.2.23.sbupdate",
-  "sha256": "bc37895b249fe405617392a639ad7fbc92ffa79b8dfd4b261afdd7b127e9bcfe",
-  "size": 771788,
-  "released": "2026-10-08T01:31:14.413Z",
+  "version": "0.2.24",
+  "notes": "The ROS builder fills the window. In Review (no row buttons) or on a screen wider than its columns, Notes stretches to fill the space instead of leaving an empty strip. Make the inspector taller or shorter: drag its top edge (or put the focus on it and use ↑ ↓). The height is kept on this Mac; double-click the edge to fit it to its tab again. After a sixth critique (29/40): each row's ↑ ↓ + ✕ show only on the row under the mouse, the picked rows and the row being edited (✕ set apart from +). Tools ▾ in the top bar holds Find, Go to cue, the next thing to fix or check, and Renumber; Keys &…",
+  "file": "StandBy-0.2.24.sbupdate",
+  "sha256": "81b59983d6829b513760d89a1276d4a5420c6edd9d13e0da42b83cf10917e03e",
+  "size": 773482,
+  "released": "2026-10-08T01:43:03.659Z",
   "minShell": "0.2.0",
-  "sig": "+iyKWGbtMZL2KEHi4GGu4KvHA+Uw0/ljk28mwQPGYrSRgemchLEvhf1Sor+KxRXwrq2QQ/wNZ0OTfZLStOaiCQ=="
+  "sig": "8jZB7K4Gd9aed4r5Rj41Zmbuia40vWfJB+TnnKpDSS94LdM5x+BRTKNOWg6ejkjtZVQ/s55RbcPLxJNnCHscBA=="
 }

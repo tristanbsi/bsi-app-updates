@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.28",
-  "notes": "The prompter ends on a black screen. The script now scrolls on past its last line until the last words have left the top of the talent screen, and the reading marker fades away, so the screen goes completely black (before, the last line or two stayed on the reading marker). Rehearsal times, the END marker and \"Line N of M\" still measure to the last line, so earlier rehearsal reads are unchanged.",
-  "file": "StandBy-0.2.28.sbupdate",
-  "sha256": "0e53d595c7bad773b9c58c85b6b5840001d2c5a59c115b44b9dd5cd098e58485",
-  "size": 789156,
-  "released": "2026-10-14T19:13:34.765Z",
+  "version": "0.2.29",
+  "notes": "Follow the prompter with no caller running. The prompter Mac now has its own watch link, `http://<prompter Mac>:8081/prompter`: an exact copy of the talent screen (mirroring and speaker timer included) that any phone, tablet or laptop on the network can open, with no caller and no PIN. More › Watch on the network… in the prompter shows the link with a QR code and Copy. Watch only. The caller's own /prompter link works as before.",
+  "file": "StandBy-0.2.29.sbupdate",
+  "sha256": "e903904b10e8e893e00ab7669cafb9200a11e58085876b7aa19cecc2761bbf3b",
+  "size": 790957,
+  "released": "2026-10-14T21:23:42.139Z",
   "minShell": "0.2.0",
-  "sig": "CgY/YkU/kqsjcbPlBaF0hhaBvFKFKv9b+uXgiJDeXOpff3eBwGhtGJdkF+Se+B/Df79HGw2OgJA7bPmC/45jCw=="
+  "sig": "3wMnJ4DoM9RLNnEtZB/CN0xZoi+blozoVW+VgP9EiiwYC7dPWoZs/DuAl16XlGh4+oRC095Tl3CnE8QXwdOzCQ=="
 }

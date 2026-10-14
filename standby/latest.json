@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.26",
-  "notes": "StandBy asks when there's an update. A few seconds after it opens, a new version now brings up *Update StandBy to 0.2.x?* with Install & Restart or Later, instead of a Mac notification that was easy to miss (or that macOS never showed). Never while a show is in progress: then it waits for the next launch.",
-  "file": "StandBy-0.2.26.sbupdate",
-  "sha256": "9b1d7e9aab22dd094cdc73a84026b09509b27b058b1fc7c50b1c6770b32d9245",
-  "size": 780232,
-  "released": "2026-10-08T13:16:54.225Z",
+  "version": "0.2.27",
+  "notes": "The prompter joins lines a page broke. Text pasted from a PDF or an email arrives a line at a time; StandBy now notices and offers Join the lines, which puts its paragraphs back together (blank lines, list items, speaker names and sentence ends keep their breaks). Join lines in the toolbar does it for any selected lines. Undo on both. Find in the script (⌘F), while editing or prompting: every match lit, Enter for the next, and Prompt from here (⌘Enter) moves the prompt and the talent screen to it. Insert ▾ puts formatted directions in at the cursor: [PAUSE], [BEAT], [BREATHE], [SLOW DOWN],…",
+  "file": "StandBy-0.2.27.sbupdate",
+  "sha256": "1aa761f539f00e70dffa8dacb1dff255bb6a8121df03d2b737505436ebc280ca",
+  "size": 788845,
+  "released": "2026-10-14T17:58:55.193Z",
   "minShell": "0.2.0",
-  "sig": "BywDaC7vRB0N7ZQZB7/0cGDtW6wUgPED900cMoG5oqqQny4CfVDxfOeL+eus2Li9plEfGPmR2HUEoeBgZrNOCQ=="
+  "sig": "lH+BgoPPus+KmwDLYX97FhwrMFPDITiGwcRBO+hgIB1LZv51U1WtYklTWnt4uBfmI080FChK3UGGEvZYbDFRDw=="
 }

@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.27",
-  "notes": "The prompter joins lines a page broke. Text pasted from a PDF or an email arrives a line at a time; StandBy now notices and offers Join the lines, which puts its paragraphs back together (blank lines, list items, speaker names and sentence ends keep their breaks). Join lines in the toolbar does it for any selected lines. Undo on both. Find in the script (⌘F), while editing or prompting: every match lit, Enter for the next, and Prompt from here (⌘Enter) moves the prompt and the talent screen to it. Insert ▾ puts formatted directions in at the cursor: [PAUSE], [BEAT], [BREATHE], [SLOW DOWN],…",
-  "file": "StandBy-0.2.27.sbupdate",
-  "sha256": "1aa761f539f00e70dffa8dacb1dff255bb6a8121df03d2b737505436ebc280ca",
-  "size": 788845,
-  "released": "2026-10-14T17:58:55.193Z",
+  "version": "0.2.28",
+  "notes": "The prompter ends on a black screen. The script now scrolls on past its last line until the last words have left the top of the talent screen, and the reading marker fades away, so the screen goes completely black (before, the last line or two stayed on the reading marker). Rehearsal times, the END marker and \"Line N of M\" still measure to the last line, so earlier rehearsal reads are unchanged.",
+  "file": "StandBy-0.2.28.sbupdate",
+  "sha256": "0e53d595c7bad773b9c58c85b6b5840001d2c5a59c115b44b9dd5cd098e58485",
+  "size": 789156,
+  "released": "2026-10-14T19:13:34.765Z",
   "minShell": "0.2.0",
-  "sig": "lH+BgoPPus+KmwDLYX97FhwrMFPDITiGwcRBO+hgIB1LZv51U1WtYklTWnt4uBfmI080FChK3UGGEvZYbDFRDw=="
+  "sig": "CgY/YkU/kqsjcbPlBaF0hhaBvFKFKv9b+uXgiJDeXOpff3eBwGhtGJdkF+Se+B/Df79HGw2OgJA7bPmC/45jCw=="
 }

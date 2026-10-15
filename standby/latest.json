@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.30",
-  "notes": "The network copy of the talent screen shows how far along the read is. Along the bottom of /prompter (on the caller or straight from the prompter Mac): *Line 42 of 180 · 41 read · 138 to go*, how many lines to the next prompter cue and the next caller cue, and a thin gold bar filling as it goes; *End of script* once it's through. It sits outside the picture, so it's never mirrored. A click or P hides it on that screen (it remembers), or add `?progress=0` to the link for a talent's own monitor. The network copy scrolls smoothly. It stuttered and stepped backwards a little while scrolling,…",
-  "file": "StandBy-0.2.30.sbupdate",
-  "sha256": "1541c59eaab87adc787e6886996b1819e1f1b959d3da89ab06cb375c053facef",
-  "size": 793606,
-  "released": "2026-10-15T16:18:57.162Z",
+  "version": "0.2.31",
+  "notes": "A clock on the network copy of the talent screen (/prompter): the time of day, with seconds, on the show's clock (the caller's, or the prompter Mac's straight from it). Drag it anywhere; drag its corner to make it bigger or smaller. Each screen keeps its own place and size. C hides it, or add `?clock=0` to the link. It's never mirrored and never shows on the talent's own screen.",
+  "file": "StandBy-0.2.31.sbupdate",
+  "sha256": "8fff419dc53daadac88c341f4ebcec2a0aac4c22e9783f044f5ede9b43a71ee9",
+  "size": 795337,
+  "released": "2026-10-15T17:14:35.854Z",
   "minShell": "0.2.0",
-  "sig": "S0dtCPJ9Yc3W2y46nSNnbVfCGMFcf4OZ7nZSFMg5uf5qQ1mAWTXGaqtFOQ1cIOP5bEfd9ZgFsPgm4TJLzwb7BA=="
+  "sig": "juJDDFxDaZ1enbejzaaoWusoQCzYseklia1Ci6FAcg7qd7EG4mN5+jiVLHwbmWnUDiKKXpyocWicS8VVXRO/DQ=="
 }

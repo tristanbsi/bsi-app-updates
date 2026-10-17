@@ -1,0 +1,24 @@
+ReadBack — read me first
+
+ReadBack turns comms channels into live text on a Mac, and shares them with phones and laptops on the network.
+It needs macOS 26 (Tahoe) on an Apple silicon Mac (M1 or newer).
+
+INSTALL
+1. Drag ReadBack.app into your Applications folder.
+2. The first time, right-click (or Control-click) ReadBack and choose Open, then Open again in the box that appears.
+   macOS shows a warning because ReadBack comes from BSI, not the App Store. You only do this once.
+   If it says the app "can't be opened", open System Settings › Privacy & Security, scroll down, and click Open Anyway.
+3. It starts on a made-up test feed of show comms. To use real audio: Settings (⌘,) › Audio & channels, pick your
+   interface (or Dante Virtual Soundcard, or the Mac's microphone), and say Allow when macOS asks about the microphone.
+
+UPDATES
+ReadBack checks for new versions by itself. When one is ready it tells you; ReadBack › Check for Updates… installs it.
+You never need to download this zip again. If an update misbehaves, ReadBack › Go Back to Previous Version… undoes it.
+
+HELP
+Help › ReadBack Manual explains every screen.
+
+TROUBLE
+- "Can't be opened because Apple cannot check it": use the right-click › Open steps above.
+- No text appears: check Settings › Audio & channels: the right source, each channel on, its meter moving.
+- Still stuck: send Tristan a note (info@bsiproduction.com) with what you clicked and what you saw.

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // One release command for every BSI desktop app.
 //
-//   node tools/release.js <patchmap|standby|loader> [--dir <app folder>] [--dry-run] [--no-publish]
+//   node tools/release.js <patchmap|standby|loader|readback> [--dir <app folder>] [--dry-run] [--no-publish]
 //                         [--notes "…"] [--min-shell X.Y.Z] [--notarize] [--zip <out folder>] [--push]
 //   node tools/release.js status                 each app's version here vs the feed
 //   node tools/release.js verify <app>           the feed on GitHub matches this Mac and is properly signed
@@ -61,10 +61,28 @@ const APPS = {
     packageFile: v => `dist-updates/Loader-${v}.ldupdate`,
     app: dir => path.join(dir, 'dist-release', 'Loader-darwin-arm64', 'Loader.app'),
   },
+  // ReadBack: the update package carries the Swift speech engine too (bin/readback-engine inside the app's code)
+  readback: {
+    name: 'ReadBack', ext: '.rbupdate', dir: path.join(home, 'readback'),
+    versionFile: 'package.json', changelog: 'CHANGELOG.md', manual: 'web/manual.html', readme: 'README.md',
+    manualInPackage: 'code/web/manual.html',
+    outEnv: 'READBACK_OUT', outDir: 'dist-release',
+    build: [{ cmd: 'npm', args: ['run', 'package'] }, { cmd: 'npm', args: ['run', 'update-package', '--'], notes: true }],
+    packageFile: v => `dist-updates/ReadBack-${v}.rbupdate`,
+    app: dir => path.join(dir, 'dist-release', 'ReadBack-darwin-arm64', 'ReadBack.app'),
+  },
 };
 
-// Loader: ~/loader, unless it holds no app code and the 0.1 worktree does
+// Loader: ~/loader, unless it holds no app code and the 0.1 worktree does.
+// ReadBack: ~/readback, unless its work sits in the beta worktree.
 function defaultDir(id) {
+  if (id === 'readback') {
+    const env = process.env.BSI_READBACK_DIR && path.resolve(process.env.BSI_READBACK_DIR);
+    const main = APPS.readback.dir, wt = path.join(main, '.claude', 'worktrees', 'beta');
+    if (env) return env;
+    if (fs.existsSync(path.join(main, 'main.js'))) return main;
+    return fs.existsSync(path.join(wt, 'main.js')) ? wt : main;
+  }
   if (id !== 'loader') return APPS[id].dir;
   const env = process.env.BSI_LOADER_DIR && path.resolve(process.env.BSI_LOADER_DIR);
   const main = APPS.loader.dir, wt = path.join(main, '.claude', 'worktrees', 'loader-0.1');
@@ -341,7 +359,7 @@ async function main() {
     return;
   }
   if (cmd === 'verify') {
-    if (!APPS[arg]) throw new Stop('usage: node tools/release.js verify <patchmap|standby|loader>');
+    if (!APPS[arg]) throw new Stop('usage: node tools/release.js verify <patchmap|standby|loader|readback>');
     const r = await verifyRemote(arg);
     (r.ok ? say.ok : say.bad)(`${APPS[arg].name} on GitHub`, r.detail);
     if (!r.ok) throw new Stop();

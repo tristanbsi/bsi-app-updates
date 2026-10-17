@@ -2,7 +2,7 @@
 # Builds the first-install zip that goes in the Google Drive folder (people download it once; after that the app
 # updates itself from the feed).
 #
-#   tools/make-drive-zip.sh <patchmap|standby|loader> /path/to/App.app <out folder>
+#   tools/make-drive-zip.sh <patchmap|standby|loader|readback> /path/to/App.app <out folder>
 #
 # The zip holds the app, "READ ME FIRST.txt" and any sample files from zip-extras/<app>/ in this repo
 # (edit those files there; the READ ME text is the same one that sits in the Drive folder as
@@ -14,9 +14,9 @@
 set -euo pipefail
 
 ID="${1:-}"; APP="${2:-}"; OUT="${3:-}"
-[ -n "$ID" ] && [ -d "$APP" ] && [ -n "$OUT" ] || { echo "usage: tools/make-drive-zip.sh <patchmap|standby|loader> /path/to/App.app <out folder>"; exit 1; }
+[ -n "$ID" ] && [ -d "$APP" ] && [ -n "$OUT" ] || { echo "usage: tools/make-drive-zip.sh <patchmap|standby|loader|readback> /path/to/App.app <out folder>"; exit 1; }
 case "$ID" in
-  patchmap) NAME=PatchMap ;; standby) NAME=StandBy ;; loader) NAME=Loader ;;
+  patchmap) NAME=PatchMap ;; standby) NAME=StandBy ;; loader) NAME=Loader ;; readback) NAME=ReadBack ;;
   *) echo "unknown app $ID"; exit 1 ;;
 esac
 HERE="$(cd "$(dirname "$0")/.." && pwd)"

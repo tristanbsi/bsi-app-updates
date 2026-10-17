@@ -33,7 +33,17 @@ const APPS = {
   patchmap: { dir: dirFlag('patchmap') || path.join(home, 'patchmap'), lib: 'code', web: 'code/web' },
   standby: { dir: dirFlag('standby') || path.join(home, 'bsi-showcall-app', 'host'), lib: 'lib', web: 'web' },
   loader: { dir: dirFlag('loader') || loaderDir(), lib: 'lib', web: 'web' },
+  readback: { dir: dirFlag('readback') || readbackDir(), lib: 'lib', web: 'web' },
 };
+
+// ReadBack: ~/readback, unless its work sits in the beta worktree (BSI_READBACK_DIR also works)
+function readbackDir() {
+  const env = process.env.BSI_READBACK_DIR && path.resolve(process.env.BSI_READBACK_DIR);
+  const main = path.join(home, 'readback'), wt = path.join(main, '.claude', 'worktrees', 'beta');
+  if (env) return env;
+  if (fs.existsSync(path.join(main, 'main.js'))) return main;
+  return fs.existsSync(path.join(wt, 'main.js')) ? wt : main;
+}
 const FILES = [
   { src: 'updater.js', to: 'lib' },
   { src: 'app-updates-core.js', to: 'lib' },

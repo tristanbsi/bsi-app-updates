@@ -12,7 +12,7 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 const { signedText, verifyRelease, sha256, cmpVer } = require('../client/updater');
 
-const APPS = { patchmap: { ext: '.pmupdate', name: 'PatchMap' }, standby: { ext: '.sbupdate', name: 'StandBy' }, loader: { ext: '.ldupdate', name: 'Loader' }, trusstape: { ext: '.ttupdate', name: 'TrussTape' } };
+const APPS = { patchmap: { ext: '.pmupdate', name: 'PatchMap' }, standby: { ext: '.sbupdate', name: 'StandBy' }, loader: { ext: '.ldupdate', name: 'Loader' }, trusstape: { ext: '.ttupdate', name: 'TrussTape' }, readback: { ext: '.rbupdate', name: 'ReadBack' } };
 const KEY = process.env.BSI_SIGNING_KEY || path.join(require('os').homedir(), '.config', 'bsi-updates', 'signing-key.pem');
 const repo = path.join(__dirname, '..');
 
@@ -22,7 +22,7 @@ const flag = name => { const i = args.indexOf(name); if (i < 0) return null; con
 const minShell = flag('--min-shell');
 const noCommit = args.includes('--no-commit'); if (noCommit) args.splice(args.indexOf('--no-commit'), 1);
 const [appId, pkg] = args;
-if (!APPS[appId] || !pkg) fail('usage: node tools/publish.js <patchmap|standby|loader|trusstape> <package file> [--min-shell X.Y.Z] [--no-commit]');
+if (!APPS[appId] || !pkg) fail('usage: node tools/publish.js <patchmap|standby|loader|trusstape|readback> <package file> [--min-shell X.Y.Z] [--no-commit]');
 if (!fs.existsSync(KEY)) fail(`No signing key at ${KEY}`);
 if (minShell && !/^\d+\.\d+\.\d+$/.test(minShell)) fail('--min-shell must look like 1.2.3');
 

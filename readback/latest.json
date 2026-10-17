@@ -1,11 +1,11 @@
 {
   "app": "readback",
-  "version": "0.1.1",
-  "notes": "Updates from the BSI feed: ReadBack checks for new versions by itself; ReadBack › Check for Updates… installs one (the speech engine comes with it) and Go Back to Previous Version… undoes it. Help › ReadBack Manual: every screen explained, keyboard shortcuts, and this What’s new list. The level meters move more smoothly.",
-  "file": "ReadBack-0.1.1.rbupdate",
-  "sha256": "c87bf2261b081197f326787bf719965704f5825e9e3872dc2ad754e559d4b3c4",
-  "size": 448752,
-  "released": "2026-10-17T18:43:35.538Z",
+  "version": "0.1.2",
+  "notes": "Link StandBy: Settings › Sharing shows a 4-digit link code; StandBy (0.2.32 and later, Show › Link ReadBack…) finds this Mac on the network and links with it. StandBy then marks cues called on comms, ticks departments heard standing by, puts every line in its show report, and can follow the talent's voice in the prompter. Keywords from StandBy: linked, the show's cue numbers, departments and names are highlighted in StandBy's colours (Settings › Keywords › From StandBy). They change with the run of show and never flash or send OSC. Messages with StandBy: StandBy's messages to everyone arrive…",
+  "file": "ReadBack-0.1.2.rbupdate",
+  "sha256": "ac6e558f760bc2b147d80eaee958085ee8f7026dc80966c87a8df73b1145e13d",
+  "size": 453518,
+  "released": "2026-10-17T19:45:28.704Z",
   "minShell": "0.1.1",
-  "sig": "569Kl4Np/yXhOf9Kz1S6n/oWa0D8msnIcauyPeN+RoQPeXedw0cX/bKEfpN//nbHg7e6OLrat3MlHcHgNfEUCw=="
+  "sig": "owPYbntGUJVjB6AyDtYjWXynSFZAA7FXC94zWtdCMty5qOd26Zj+WFBkrf9L8eeTxSvQKZYQ9lDqX4n68/jgAQ=="
 }

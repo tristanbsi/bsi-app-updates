@@ -1,0 +1,11 @@
+{
+  "app": "readback",
+  "version": "0.1.1",
+  "notes": "Updates from the BSI feed: ReadBack checks for new versions by itself; ReadBack › Check for Updates… installs one (the speech engine comes with it) and Go Back to Previous Version… undoes it. Help › ReadBack Manual: every screen explained, keyboard shortcuts, and this What’s new list. The level meters move more smoothly.",
+  "file": "ReadBack-0.1.1.rbupdate",
+  "sha256": "c87bf2261b081197f326787bf719965704f5825e9e3872dc2ad754e559d4b3c4",
+  "size": 448752,
+  "released": "2026-10-17T18:43:35.538Z",
+  "minShell": "0.1.1",
+  "sig": "569Kl4Np/yXhOf9Kz1S6n/oWa0D8msnIcauyPeN+RoQPeXedw0cX/bKEfpN//nbHg7e6OLrat3MlHcHgNfEUCw=="
+}

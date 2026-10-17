@@ -1,11 +1,11 @@
 {
   "app": "readback",
-  "version": "0.1.2",
-  "notes": "Link StandBy: Settings › Sharing shows a 4-digit link code; StandBy (0.2.32 and later, Show › Link ReadBack…) finds this Mac on the network and links with it. StandBy then marks cues called on comms, ticks departments heard standing by, puts every line in its show report, and can follow the talent's voice in the prompter. Keywords from StandBy: linked, the show's cue numbers, departments and names are highlighted in StandBy's colours (Settings › Keywords › From StandBy). They change with the run of show and never flash or send OSC. Messages with StandBy: StandBy's messages to everyone arrive…",
-  "file": "ReadBack-0.1.2.rbupdate",
-  "sha256": "ac6e558f760bc2b147d80eaee958085ee8f7026dc80966c87a8df73b1145e13d",
-  "size": 453518,
-  "released": "2026-10-17T19:45:28.704Z",
+  "version": "0.1.3",
+  "notes": "A new look: Tally. ReadBack now looks like a broadcast wall: black, high contrast, made to be read from across a booth. Channels are name strips (like the labels under monitors) in their department colours, names in capitals, everything in the Mac’s own font for the sharpest text on screen. No more violet, so ReadBack never looks like StandBy’s rehearsal mode. Talk lamps. Every channel’s strip has a lamp that lights in its colour while someone on it is mid-sentence. The level meters moved to Settings › Audio & channels. What’s being said sits in place. The live line grows at the end of the…",
+  "file": "ReadBack-0.1.3.rbupdate",
+  "sha256": "2d3bfdce84e74b2f5b6be5fe5aaace40de88c86c3930a9d5c06578b432a76738",
+  "size": 458873,
+  "released": "2026-10-17T20:51:04.890Z",
   "minShell": "0.1.1",
-  "sig": "owPYbntGUJVjB6AyDtYjWXynSFZAA7FXC94zWtdCMty5qOd26Zj+WFBkrf9L8eeTxSvQKZYQ9lDqX4n68/jgAQ=="
+  "sig": "b3/hPY23EbgShDaTZfD1u9GD5vQTPLHLDjiMMmrhds2Iv8sKZORI3h3lMz3S8Qx+9xwUV1F42rnwo8qUtaDcBw=="
 }

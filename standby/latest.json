@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.32",
-  "notes": "StandBy reads the comms (with ReadBack). ReadBack, BSI's comms-to-text app, hears the intercom channels; Show › Link ReadBack… links the caller to it (pick it from the network, type the 4-digit code from ReadBack's Settings › Sharing). Speech never presses GO: StandBy only marks, ticks and writes things down. Who the standby GO needs: the Standby card shows each department with something to do on that GO (from the department columns, with or without ReadBack). Linked, a department ticks when it's heard standing by (\"lights standing by\", from any channel); the ticks clear on GO. Cues heard on…",
-  "file": "StandBy-0.2.32.sbupdate",
-  "sha256": "5930f9d7aed5c87fb7f992651992b55ba03af14f4f9629c75e700c3dad4686e5",
-  "size": 819980,
-  "released": "2026-10-17T19:53:59.392Z",
+  "version": "0.2.33",
+  "notes": "Stream Deck buttons for comms (Companion module 1.0.7, preset group *Comms (ReadBack)*): the ReadBack link; who still has to stand by for the standby GO, amber and naming them, green once everyone has; a STANDING BY tile per department; HOLD, red for 10 seconds after “hold” is said on comms; the last thing said; and a tile per ReadBack channel. Dark while ReadBack isn’t linked. New feedback Comms: Everyone standing by.",
+  "file": "StandBy-0.2.33.sbupdate",
+  "sha256": "ce55a9675cffb2a658e2e4675f21b025892d7748c2af904d44b64cda80417f05",
+  "size": 820887,
+  "released": "2026-10-17T20:50:44.302Z",
   "minShell": "0.2.0",
-  "sig": "x/o0RFeMpeX87wVuV9+zK14P5joZJnrz9wHAJ8Wiofv1CXYa5CES4fn+lb90NSx24N8EguBhEVk6fYH1gv4ODQ=="
+  "sig": "5RS+SiE6Eqf84Xf3dDzGfN7wdL2LaZ+eA7iXDhhF3BmkdkV4DdcxcM0MM+B2Ha9AzjH5VSe8JgtmwXpEw2wgCA=="
 }

@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.31",
-  "notes": "A clock on the network copy of the talent screen (/prompter): the time of day, with seconds, on the show's clock (the caller's, or the prompter Mac's straight from it). Drag it anywhere; drag its corner to make it bigger or smaller. Each screen keeps its own place and size. C hides it, or add `?clock=0` to the link. It's never mirrored and never shows on the talent's own screen.",
-  "file": "StandBy-0.2.31.sbupdate",
-  "sha256": "8fff419dc53daadac88c341f4ebcec2a0aac4c22e9783f044f5ede9b43a71ee9",
-  "size": 795337,
-  "released": "2026-10-15T17:14:35.854Z",
+  "version": "0.2.32",
+  "notes": "StandBy reads the comms (with ReadBack). ReadBack, BSI's comms-to-text app, hears the intercom channels; Show › Link ReadBack… links the caller to it (pick it from the network, type the 4-digit code from ReadBack's Settings › Sharing). Speech never presses GO: StandBy only marks, ticks and writes things down. Who the standby GO needs: the Standby card shows each department with something to do on that GO (from the department columns, with or without ReadBack). Linked, a department ticks when it's heard standing by (\"lights standing by\", from any channel); the ticks clear on GO. Cues heard on…",
+  "file": "StandBy-0.2.32.sbupdate",
+  "sha256": "5930f9d7aed5c87fb7f992651992b55ba03af14f4f9629c75e700c3dad4686e5",
+  "size": 819980,
+  "released": "2026-10-17T19:53:59.392Z",
   "minShell": "0.2.0",
-  "sig": "juJDDFxDaZ1enbejzaaoWusoQCzYseklia1Ci6FAcg7qd7EG4mN5+jiVLHwbmWnUDiKKXpyocWicS8VVXRO/DQ=="
+  "sig": "x/o0RFeMpeX87wVuV9+zK14P5joZJnrz9wHAJ8Wiofv1CXYa5CES4fn+lb90NSx24N8EguBhEVk6fYH1gv4ODQ=="
 }

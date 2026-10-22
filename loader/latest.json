@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.16",
-  "notes": "Half-sheet labels print landscape. Print Pack Labels on Half Sheets… now makes a landscape PDF: each half-sheet sticker is a column of three labels 5½\" wide and 2⅚\" tall, laid out like the Avery labels (big number and case ID side by side, the QR at the end), six to a page, cut apart on the dashed lines. They were tall and narrow before.",
-  "file": "Loader-0.4.16.ldupdate",
-  "sha256": "0432e30f7cc8685fa83a5821b404b47629dcd2d22416e5ee656ff41096ceb771",
-  "size": 842875,
-  "released": "2026-10-22T13:37:15.927Z",
+  "version": "0.4.17",
+  "notes": "Refresh updates the cases already packed. After an item is added to the order, Refresh gives a case already in the truck the items the order now puts in it, so its label and the pack numbers sent to ShopCall list the new item (it used to keep what it held when it was packed). Send again after. Putting a loose item in a case takes it out of Loose. Telling the library a case holds an item (What's in Each Case…) now rebuilds the To pack list at once, and the item rides in that case even when the case is already on the order for its other lines. Before, it stayed under Loose until a Refresh, or…",
+  "file": "Loader-0.4.17.ldupdate",
+  "sha256": "5e517174f87eb89dd44b2c8f1425282b406d3b9fbe2ad7a88b70e6db87b27217",
+  "size": 844630,
+  "released": "2026-10-22T17:16:48.855Z",
   "minShell": "0.1.0",
-  "sig": "ZR6LiqXxXLV9R/+SmPjbJ+KsmWsS0MgJtcGXaDYI+6hVeOlR/1m5C8cAq+JT86u1rSGod9l2XAw6mnsAiTw4AQ=="
+  "sig": "hJoRYuV7R+WV4AiHpZELq2OuK6Q/VUEfoIWUBwtUJyr1fZ/6IfQVOADY0RT4mSj12fgjDYYEO124kiYevg27CA=="
 }

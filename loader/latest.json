@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.14",
-  "notes": "Right-click a case in the library. A case type: Edit…, Add One to the Truck, Add All, Show / Hide Each Case, What's Inside…. One of its cases (350, 360…): What's in it…, Add It to the Truck or Find It in the Truck (or Go to the truck it's in), Edit the type (every one). Double-click still edits. Half-sheet labels: six to a page. Print Pack Labels on Half Sheets… now puts three labels side by side on each half-sheet sticker (six to a page, 2⅚\" × 5½\" each, cut apart on the dashed lines), instead of one big label per half.",
-  "file": "Loader-0.4.14.ldupdate",
-  "sha256": "8ee80c0edd45cfdb54f8acaf78e6df9a200e878667266f1981d7cdc4060ac464",
-  "size": 842453,
-  "released": "2026-10-22T13:14:36.081Z",
+  "version": "0.4.15",
+  "notes": "Bigger QR squares on the pack labels. A pack label's QR (and the checklist's truck QR) now holds the crew link's short address (bsiproduction.github.io/?p=pull…) instead of the whole ShopCall address: about half the characters, so the code is 49 squares across instead of 61 and each square is bigger, easier for a phone to read from further away or on a scuffed label. It opens the same pull in the live shop app, and ShopCall's Scan reads it the same way (ShopCall's own case labels use this shape too). Labels already printed still scan.",
+  "file": "Loader-0.4.15.ldupdate",
+  "sha256": "63134f767f83386613b5647916bb7467f3f6c691d557bfe550e7c650408f4f0a",
+  "size": 842767,
+  "released": "2026-10-22T13:31:19.957Z",
   "minShell": "0.1.0",
-  "sig": "NEyc++J1RNpc3CLoy+h2hKuyFvRaDiYl8P05ZsaypJc27y9TVXnNNkFoEjjk+ASLGwPkJQ1dRBlplYu9EcZsDA=="
+  "sig": "MRj3MnNW/b9045pG4ccSd4DV6tr3MRxDcRMf2K/TpssXkFbwpwSHwikmKNpJ+fAXBONmCEfn4piNz0p+//sFCw=="
 }

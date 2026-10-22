@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.13",
-  "notes": "Pack labels on half sheets. Load › Print Pack Labels on Half Sheets… prints the pack labels twice the size, two 8½\" × 5½\" labels to a letter page, to cut apart on the dashed line: for sticker paper you cut yourself until the Avery 5164 sheets are in. Pack the rest packs in straight rows, the crew's way. Its first option, Straight rows, builds the truck row by row from the nose, each row wall to wall with one straight back so a strap across it holds. Taught by Tristan over three rounds of the Packing Review (the last six gigs packed and marked row by row): the floor across first, then a…",
-  "file": "Loader-0.4.13.ldupdate",
-  "sha256": "b1980e6841a69efe2b37471e8b141b3cc10e4680d7a9aae8f01f10ab46886910",
-  "size": 841106,
-  "released": "2026-10-22T13:02:10.240Z",
+  "version": "0.4.14",
+  "notes": "Right-click a case in the library. A case type: Edit…, Add One to the Truck, Add All, Show / Hide Each Case, What's Inside…. One of its cases (350, 360…): What's in it…, Add It to the Truck or Find It in the Truck (or Go to the truck it's in), Edit the type (every one). Double-click still edits. Half-sheet labels: six to a page. Print Pack Labels on Half Sheets… now puts three labels side by side on each half-sheet sticker (six to a page, 2⅚\" × 5½\" each, cut apart on the dashed lines), instead of one big label per half.",
+  "file": "Loader-0.4.14.ldupdate",
+  "sha256": "8ee80c0edd45cfdb54f8acaf78e6df9a200e878667266f1981d7cdc4060ac464",
+  "size": 842453,
+  "released": "2026-10-22T13:14:36.081Z",
   "minShell": "0.1.0",
-  "sig": "ZCoC4atpNb5XxsnA2LisThb/5rWQtfej72rdrueX2XpPvQPbhbD8cMaKToHciaJ6CIorkZZCNkcHLU5ezNAOCg=="
+  "sig": "NEyc++J1RNpc3CLoy+h2hKuyFvRaDiYl8P05ZsaypJc27y9TVXnNNkFoEjjk+ASLGwPkJQ1dRBlplYu9EcZsDA=="
 }

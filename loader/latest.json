@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.15",
-  "notes": "Bigger QR squares on the pack labels. A pack label's QR (and the checklist's truck QR) now holds the crew link's short address (bsiproduction.github.io/?p=pull…) instead of the whole ShopCall address: about half the characters, so the code is 49 squares across instead of 61 and each square is bigger, easier for a phone to read from further away or on a scuffed label. It opens the same pull in the live shop app, and ShopCall's Scan reads it the same way (ShopCall's own case labels use this shape too). Labels already printed still scan.",
-  "file": "Loader-0.4.15.ldupdate",
-  "sha256": "63134f767f83386613b5647916bb7467f3f6c691d557bfe550e7c650408f4f0a",
-  "size": 842767,
-  "released": "2026-10-22T13:31:19.957Z",
+  "version": "0.4.16",
+  "notes": "Half-sheet labels print landscape. Print Pack Labels on Half Sheets… now makes a landscape PDF: each half-sheet sticker is a column of three labels 5½\" wide and 2⅚\" tall, laid out like the Avery labels (big number and case ID side by side, the QR at the end), six to a page, cut apart on the dashed lines. They were tall and narrow before.",
+  "file": "Loader-0.4.16.ldupdate",
+  "sha256": "0432e30f7cc8685fa83a5821b404b47629dcd2d22416e5ee656ff41096ceb771",
+  "size": 842875,
+  "released": "2026-10-22T13:37:15.927Z",
   "minShell": "0.1.0",
-  "sig": "MRj3MnNW/b9045pG4ccSd4DV6tr3MRxDcRMf2K/TpssXkFbwpwSHwikmKNpJ+fAXBONmCEfn4piNz0p+//sFCw=="
+  "sig": "ZR6LiqXxXLV9R/+SmPjbJ+KsmWsS0MgJtcGXaDYI+6hVeOlR/1m5C8cAq+JT86u1rSGod9l2XAw6mnsAiTw4AQ=="
 }

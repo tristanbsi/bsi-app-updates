@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.19",
-  "notes": "One unit: cases that roll out as one. Cases that live stacked in the shop (a rack on a rack) can be made one unit for a load: ⌘-click them in the truck, then Load › Make Them One Unit (⌘G). They share one load number, go in together, get one pack label naming each case, and pick, drag and turn as one. Send gives each the same number, so one scan in ShopCall brings up the whole unit. It belongs to the load only (the library doesn't change); Split the Unit (⇧⌘G) takes it apart. Long contents stop at the “…” on Avery labels. A case holding more than four lines’ worth printed a fifth line under…",
-  "file": "Loader-0.4.19.ldupdate",
-  "sha256": "392c5e657513fe8e8cfd79c1dd25f12a65137bbbb8812b335782f360a4153f2f",
-  "size": 847687,
-  "released": "2026-10-22T19:11:17.422Z",
+  "version": "0.4.20",
+  "notes": "Pack labels fit what's on them. The QR is bigger: it fills from under the case ID box down to the footer (up to 1.6\" on half sheets), so it scans from further away. What's in a case shrinks to fit above the footer instead of stopping after three lines, and only ends in \"…\" when it still doesn't fit. A case ID box that wraps (SLIMPAR_2 + SLIMPAR_1, 2' stair cart (solid)) hugs its text instead of staying full width, a unit's IDs wrap between IDs, never inside one, and a box past two lines gets smaller. A unit's label says each thing once. The case IDs are in the box, so the contents don't…",
+  "file": "Loader-0.4.20.ldupdate",
+  "sha256": "634399fe53c00307bd190c81dad7b233b56fefc7577d432c95aaa982c4d25136",
+  "size": 849491,
+  "released": "2026-10-22T19:20:56.990Z",
   "minShell": "0.1.0",
-  "sig": "NevWaq+GuaFTO1sXtbep2ZbBwnEBxDZ9eHKbsLLKXc+JfSEUoQPjbP86mVDULk+rvVsZKIzICsDY7sk34n4JBg=="
+  "sig": "CwhAjnMQKNerZVH7l2rInfNPO6GY8pyL6Q/VLH1xB2tGwJ9g4kprerlKXfT0y3zNr8ZZcYgz8jUC5cTV8IPQAQ=="
 }

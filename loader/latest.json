@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.17",
-  "notes": "Refresh updates the cases already packed. After an item is added to the order, Refresh gives a case already in the truck the items the order now puts in it, so its label and the pack numbers sent to ShopCall list the new item (it used to keep what it held when it was packed). Send again after. Putting a loose item in a case takes it out of Loose. Telling the library a case holds an item (What's in Each Case…) now rebuilds the To pack list at once, and the item rides in that case even when the case is already on the order for its other lines. Before, it stayed under Loose until a Refresh, or…",
-  "file": "Loader-0.4.17.ldupdate",
-  "sha256": "5e517174f87eb89dd44b2c8f1425282b406d3b9fbe2ad7a88b70e6db87b27217",
-  "size": 844630,
-  "released": "2026-10-22T17:16:48.855Z",
+  "version": "0.4.18",
+  "notes": "Brighter yellow on the labels. A gig on yellow tape prints its label stripe and \"Yellow tape\" tag in a bright gaff yellow (#FFD000) instead of the mustard screen yellow. The screen colours don't change.",
+  "file": "Loader-0.4.18.ldupdate",
+  "sha256": "d2418f08793b178df4f7606f2b532fb30a4fb937836a0df5b6fbeccbcb296a6f",
+  "size": 844625,
+  "released": "2026-10-22T17:56:12.933Z",
   "minShell": "0.1.0",
-  "sig": "hJoRYuV7R+WV4AiHpZELq2OuK6Q/VUEfoIWUBwtUJyr1fZ/6IfQVOADY0RT4mSj12fgjDYYEO124kiYevg27CA=="
+  "sig": "m4kVVKoimE5FXs0Qeq3T/uHkemWRWOZZztV4yj0NxQBdhD0D+417HHhKDIKf2+1hXfbvOHjg+lD8W+b8qCJRDQ=="
 }

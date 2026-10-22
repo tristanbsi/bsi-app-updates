@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.20",
-  "notes": "Pack labels fit what's on them. The QR is bigger: it fills from under the case ID box down to the footer (up to 1.6\" on half sheets), so it scans from further away. What's in a case shrinks to fit above the footer instead of stopping after three lines, and only ends in \"…\" when it still doesn't fit. A case ID box that wraps (SLIMPAR_2 + SLIMPAR_1, 2' stair cart (solid)) hugs its text instead of staying full width, a unit's IDs wrap between IDs, never inside one, and a box past two lines gets smaller. A unit's label says each thing once. The case IDs are in the box, so the contents don't…",
-  "file": "Loader-0.4.20.ldupdate",
-  "sha256": "634399fe53c00307bd190c81dad7b233b56fefc7577d432c95aaa982c4d25136",
-  "size": 849491,
-  "released": "2026-10-22T19:20:56.990Z",
+  "version": "0.4.21",
+  "notes": "Print the Case column's cases too, when you want. When a load has cases from the shop order's Case column (ShopCall prints their case labels, so Loader leaves them out), Print Pack Labels now says which ones (#4 P&D BOAT, #13 316…) and has a Print these here too box, for when ShopCall's case labels aren't being printed. Loader remembers the tick.",
+  "file": "Loader-0.4.21.ldupdate",
+  "sha256": "59e126976563c4916cd203fbd8dba24cc19fc01b97a3be7b80b5cd3d18c95333",
+  "size": 850202,
+  "released": "2026-10-22T19:29:44.734Z",
   "minShell": "0.1.0",
-  "sig": "CwhAjnMQKNerZVH7l2rInfNPO6GY8pyL6Q/VLH1xB2tGwJ9g4kprerlKXfT0y3zNr8ZZcYgz8jUC5cTV8IPQAQ=="
+  "sig": "GEmeN1SpliTnqG7RwrTmOHw/UxlwL+iuqpL+2uXohZy4kIn4E2A7M0NkhUon7LqQSich5HFU+xhwQTWtKBUmDw=="
 }

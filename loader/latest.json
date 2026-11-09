@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.21",
-  "notes": "Print the Case column's cases too, when you want. When a load has cases from the shop order's Case column (ShopCall prints their case labels, so Loader leaves them out), Print Pack Labels now says which ones (#4 P&D BOAT, #13 316…) and has a Print these here too box, for when ShopCall's case labels aren't being printed. Loader remembers the tick.",
-  "file": "Loader-0.4.21.ldupdate",
-  "sha256": "59e126976563c4916cd203fbd8dba24cc19fc01b97a3be7b80b5cd3d18c95333",
-  "size": 850202,
-  "released": "2026-10-22T19:29:44.734Z",
+  "version": "0.4.22",
+  "notes": "A stack is numbered from the top down. Cases standing on each other now get one run of load numbers, counted from the top: a stack of three at the nose is #1 on top, #2 under it, #3 on the floor, and the next case is #4. Before, the floor cases of a row were numbered first and the cases on them after. A case bridging two stacks joins them into one run; a unit in a stack takes one number in its place. The labels, Send Pack Numbers, the PDF, the unloading page and the 3D view all use the new numbers. Each stack goes in whole. The checklist and the PDF list a stack's cases together, bottom…",
+  "file": "Loader-0.4.22.ldupdate",
+  "sha256": "521dd836f83a5a9f62be65a218d5de5b39faa99693850c0064a8d1be2dfe891e",
+  "size": 851416,
+  "released": "2026-11-09T20:37:03.815Z",
   "minShell": "0.1.0",
-  "sig": "GEmeN1SpliTnqG7RwrTmOHw/UxlwL+iuqpL+2uXohZy4kIn4E2A7M0NkhUon7LqQSich5HFU+xhwQTWtKBUmDw=="
+  "sig": "pRHMRTyqu+dKu4u/P0CbtVfpeYlxGDu5a8jR0orzK15nMsgYj8407MRSqh0PYuEoxMqj9FkVfCRoglqvtoT6AQ=="
 }

@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.22",
-  "notes": "A stack is numbered from the top down. Cases standing on each other now get one run of load numbers, counted from the top: a stack of three at the nose is #1 on top, #2 under it, #3 on the floor, and the next case is #4. Before, the floor cases of a row were numbered first and the cases on them after. A case bridging two stacks joins them into one run; a unit in a stack takes one number in its place. The labels, Send Pack Numbers, the PDF, the unloading page and the 3D view all use the new numbers. Each stack goes in whole. The checklist and the PDF list a stack's cases together, bottom…",
-  "file": "Loader-0.4.22.ldupdate",
-  "sha256": "521dd836f83a5a9f62be65a218d5de5b39faa99693850c0064a8d1be2dfe891e",
-  "size": 851416,
-  "released": "2026-11-09T20:37:03.815Z",
+  "version": "0.4.23",
+  "notes": "1, 2 and 3 type again in every box. On a gig with more than one truck, the Which truck? box picks a truck when you press 1, 2, 3…, and those keys stayed switched on after it closed: every box after it (a case's details, a name, a count) wouldn't take those digits, and pressing one could put the earlier case into a truck. Now each box starts fresh, and a closed box's keys and clicks go with it.",
+  "file": "Loader-0.4.23.ldupdate",
+  "sha256": "322203cdec2704f759b523513a5092ae6694e2a825183c32b6dc2af963e6ad0b",
+  "size": 851652,
+  "released": "2026-11-10T15:39:58.634Z",
   "minShell": "0.1.0",
-  "sig": "pRHMRTyqu+dKu4u/P0CbtVfpeYlxGDu5a8jR0orzK15nMsgYj8407MRSqh0PYuEoxMqj9FkVfCRoglqvtoT6AQ=="
+  "sig": "e6ruFVicDI6BRUTed+r6X4DR/KPUrdO5Q5jRDcc8Md/s/ErXGUSOEby7iW6h5JliMnD7o5D1BzFy5fpHMlQeCA=="
 }

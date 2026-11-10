@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.23",
-  "notes": "1, 2 and 3 type again in every box. On a gig with more than one truck, the Which truck? box picks a truck when you press 1, 2, 3…, and those keys stayed switched on after it closed: every box after it (a case's details, a name, a count) wouldn't take those digits, and pressing one could put the earlier case into a truck. Now each box starts fresh, and a closed box's keys and clicks go with it.",
-  "file": "Loader-0.4.23.ldupdate",
-  "sha256": "322203cdec2704f759b523513a5092ae6694e2a825183c32b6dc2af963e6ad0b",
-  "size": 851652,
-  "released": "2026-11-10T15:39:58.634Z",
+  "version": "0.4.24",
+  "notes": "Give a truck a label instead of T1. Load › Name This Truck… (or double-click its tab) now has a Label box: up to 10 characters, like “TRL A” or “BOX”. It takes the place of the truck's number everywhere: the tabs, the pack labels and their QR codes, the checklist, the PDF, and ShopCall when you Send Pack Numbers (“TRL A #5” instead of “T1 #5”). Two trucks of a gig can't share a label. The longer name (“Penske 26′”) still shows beside it. Leave the label blank to keep the number. After changing a label, Send Pack Numbers again and reprint the labels.",
+  "file": "Loader-0.4.24.ldupdate",
+  "sha256": "41da527f5f1be2baf468886a90adfac50d734c4778aa9d6468507e45192de273",
+  "size": 853062,
+  "released": "2026-11-10T17:04:29.208Z",
   "minShell": "0.1.0",
-  "sig": "e6ruFVicDI6BRUTed+r6X4DR/KPUrdO5Q5jRDcc8Md/s/ErXGUSOEby7iW6h5JliMnD7o5D1BzFy5fpHMlQeCA=="
+  "sig": "NUfeJR+Tq+pfqyub2TpmR61pBWN8eQa9NNG8soKZE/ZladWR/jn3grRFBxMR9P6+9w5xDXIVL9KPxCDRTNaICA=="
 }

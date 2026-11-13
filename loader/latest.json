@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.25",
-  "notes": "Pack the rest learned from your last packs. It studied six trucks you packed for real (Barton Hall TyDolla$ign's four, CU Sage Atrium Diwali, CU Hangovers) and now follows them: the stacks in them count as good pairs (ULXD racks on the GX4816, Q326s two high, SLS on SRS, MON 1 on MON 2…), the GX4816 rack column can go six high and the 48 CH split and PD4 columns three, hampers go in last by the doors, and case types you haven't put in your pack order take the order those trucks show: the long staging carts at the nose, then karts, then the case rows. Packing those six trucks again from…",
-  "file": "Loader-0.4.25.ldupdate",
-  "sha256": "15eab46e08b8e165a0f975d418031af77f16ad0f0b5c761a2876376de470a8fb",
-  "size": 858061,
-  "released": "2026-11-13T01:10:21.356Z",
+  "version": "0.4.26",
+  "notes": "Racks stack the way you build them. Pack the rest now builds your rack columns: the ULXD racks lie flat on the GX4816, five high, the way you packed CU Hangovers, instead of standing on edge in gaps across the floor or riding on deck carts. A case you've built a column of (three high or more) comes up in the pack order before what goes on it, what goes on it waits for it, and the column goes up to the height you built even when the rest of the row is lower. The 48 CH split column and the PD4 / NovaStar column work the same way. Packing your last six trucks again from empty, 16 of their 26…",
+  "file": "Loader-0.4.26.ldupdate",
+  "sha256": "2bbbee9aecf1c3f18e9e55f50a255f4b87a5aee47446511ae171aaf63011d231",
+  "size": 860015,
+  "released": "2026-11-13T02:42:33.116Z",
   "minShell": "0.1.0",
-  "sig": "a1+zvl6By1N7TjZ/fGq1posT5QRJbSHq0L6k5n+xrlL5FTZHikvtJfTbPlKMHSortI6w7jvlpeEEdIBzkRC4BA=="
+  "sig": "m9hig5da/FI8dFPKkM95uVI24Aa70IOJIsjgu50pw6uP1IkyoU119JQQOdFvucJ9hCnApYJMyRWUIIr4YROxAA=="
 }

@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.34",
-  "notes": "Mashed apostrophes in a pasted script come back. A script copied from an email, a web page or a preview (Danny’s came from Gmail’s attachment preview) can arrive with “don’t” as *donâ€™t* (or *don‚Äôt*) and “résumé” as *rÃ©sumÃ©*. The prompter now puts those back as it pastes or opens the script: curly quotes, dashes, accents and the rest. Real accents and capitals (“CAFÉ”) are left alone. Open… reads a .txt saved on Windows: its quotes and accents used to come in as �.",
-  "file": "StandBy-0.2.34.sbupdate",
-  "sha256": "e03aaa37c22d9ce438ea9e03595ddde65300ac688c3e217e648ba996a6f44814",
-  "size": 823134,
-  "released": "2026-11-17T19:57:36.652Z",
+  "version": "0.2.35",
+  "notes": "Drag a script onto the prompter. A Word, RTF, text or web file dragged from the Finder onto the script opens as a new tab (or fills an empty one), with its bold, italic and colour, the same as Open…. Before, a dropped file could replace the prompter window with the file itself. A paste with no formatting says so. A preview window (Gmail's attachment preview, a PDF viewer) puts only the words on the clipboard, never bold, italic or colour, so nothing can bring them back. After a script-sized plain paste the prompter now says so: download the file and drag it onto the script for the formatting.",
+  "file": "StandBy-0.2.35.sbupdate",
+  "sha256": "fe8d6ffbe2a5b096f5d197bc9416d987e1337557387ea1fc105d0d23688e341a",
+  "size": 824241,
+  "released": "2026-11-17T23:16:12.654Z",
   "minShell": "0.2.0",
-  "sig": "gIeW4tL9sIzDEimfpPeaxUfzc/KX+y6/095nFcHDksTQDkvc+uM+ArRyB+009w/ZN7dFFNNMTMdyXwdy+mdLAQ=="
+  "sig": "FI29Sm36/BHEB+NuQ0h1GDeZqfWX5XYIyVVS5QvHlPabCgpiuuoZb09Fib8e+QEUo9eZyRTa3S2SuSrKE7dEAA=="
 }

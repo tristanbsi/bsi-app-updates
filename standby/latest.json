@@ -1,11 +1,11 @@
 {
   "app": "standby",
-  "version": "0.2.33",
-  "notes": "Stream Deck buttons for comms (Companion module 1.0.7, preset group *Comms (ReadBack)*): the ReadBack link; who still has to stand by for the standby GO, amber and naming them, green once everyone has; a STANDING BY tile per department; HOLD, red for 10 seconds after “hold” is said on comms; the last thing said; and a tile per ReadBack channel. Dark while ReadBack isn’t linked. New feedback Comms: Everyone standing by.",
-  "file": "StandBy-0.2.33.sbupdate",
-  "sha256": "ce55a9675cffb2a658e2e4675f21b025892d7748c2af904d44b64cda80417f05",
-  "size": 820887,
-  "released": "2026-10-17T20:50:44.302Z",
+  "version": "0.2.34",
+  "notes": "Mashed apostrophes in a pasted script come back. A script copied from an email, a web page or a preview (Danny’s came from Gmail’s attachment preview) can arrive with “don’t” as *donâ€™t* (or *don‚Äôt*) and “résumé” as *rÃ©sumÃ©*. The prompter now puts those back as it pastes or opens the script: curly quotes, dashes, accents and the rest. Real accents and capitals (“CAFÉ”) are left alone. Open… reads a .txt saved on Windows: its quotes and accents used to come in as �.",
+  "file": "StandBy-0.2.34.sbupdate",
+  "sha256": "e03aaa37c22d9ce438ea9e03595ddde65300ac688c3e217e648ba996a6f44814",
+  "size": 823134,
+  "released": "2026-11-17T19:57:36.652Z",
   "minShell": "0.2.0",
-  "sig": "5RS+SiE6Eqf84Xf3dDzGfN7wdL2LaZ+eA7iXDhhF3BmkdkV4DdcxcM0MM+B2Ha9AzjH5VSe8JgtmwXpEw2wgCA=="
+  "sig": "gIeW4tL9sIzDEimfpPeaxUfzc/KX+y6/095nFcHDksTQDkvc+uM+ArRyB+009w/ZN7dFFNNMTMdyXwdy+mdLAQ=="
 }

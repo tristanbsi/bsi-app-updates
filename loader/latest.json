@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.28",
-  "notes": "Plan the load out. Load in / Load out over the truck switches between two plans for the gig: how the trucks pack going in, and how they pack coming home (things struck in a different order, the rig coming apart its own way, or a truck emptied and refilled). The first Load out asks how to start: from the load in (every case where it went in; move what comes off differently) or empty (To pack lists every case; Pack the rest works as usual). Every truck gets its load-out twin, with the same truck, label and name; naming a truck names its twin too. The load in never changes when you work on the…",
-  "file": "Loader-0.4.28.ldupdate",
-  "sha256": "8ebb12afabd7d57eec5c61666697a2d37794353bff00fc5499bacf98047596ad",
-  "size": 871068,
-  "released": "2026-11-18T20:54:45.970Z",
+  "version": "0.4.29",
+  "notes": "Teach Pack the rest yourself. Library › Learn From Your Packs… lists your gigs' trucks: tick the ones you packed for real and finished, and Pack the rest follows them straight away: their stacks and rack columns, which cases share a row, what only goes by the doors, and the order from the nose. Load outs count for the stacks (their order is the strike order, so it's left out). Until now that took Claude and a script. Back to the built-in learning undoes it. A case you stack on its own kind goes two high, even above the row. Pack the rest kept every stack level with the row, so the ST12s you…",
+  "file": "Loader-0.4.29.ldupdate",
+  "sha256": "20fdb7dbd753923bba4dde8f3db69406b69d0cbdbe2cdfe1c52879b4ffc2092f",
+  "size": 876138,
+  "released": "2026-11-18T21:54:53.848Z",
   "minShell": "0.1.0",
-  "sig": "5znsOE/i8RsW6G6an6GO8EnnaC/oRkzFOSRHS6c2eZLHePgJqPT1fDvQ1/pVoyw0y8IjikRyEK0n/M3bugt/Dw=="
+  "sig": "2BtUcTH6/mX3KLW8VDZfNIguIXeBbnFkha7tTzgmd9Hlsv0LRYF9zkqg3unhw1Fcc+Y9UtE++69LPbgJeioRCg=="
 }

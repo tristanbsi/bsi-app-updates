@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.26",
-  "notes": "Racks stack the way you build them. Pack the rest now builds your rack columns: the ULXD racks lie flat on the GX4816, five high, the way you packed CU Hangovers, instead of standing on edge in gaps across the floor or riding on deck carts. A case you've built a column of (three high or more) comes up in the pack order before what goes on it, what goes on it waits for it, and the column goes up to the height you built even when the rest of the row is lower. The 48 CH split column and the PD4 / NovaStar column work the same way. Packing your last six trucks again from empty, 16 of their 26…",
-  "file": "Loader-0.4.26.ldupdate",
-  "sha256": "2bbbee9aecf1c3f18e9e55f50a255f4b87a5aee47446511ae171aaf63011d231",
-  "size": 860015,
-  "released": "2026-11-13T02:42:33.116Z",
+  "version": "0.4.27",
+  "notes": "Pack it like a past gig. Open a shop order and press From a past gig… to start from a gig you've packed before: the same trucks (labels, names, load bars, straps and floor labels too) with every case this order has back in its old spot. The same physical case when the order has it, otherwise another of that type. Where the past gig had a case this order doesn't, a yellow dashed outline with its name marks the spot. Put a case there and the outline goes, or use Clear the outlines in the load panel. When the order has fewer of a type, cases come out a whole stack at a time (the top one, then…",
+  "file": "Loader-0.4.27.ldupdate",
+  "sha256": "c49bf03a0d830b1b02de3df939cd732b2dbc8f8e7cde1d2dc9769e36ae70aafb",
+  "size": 865276,
+  "released": "2026-11-18T20:31:07.631Z",
   "minShell": "0.1.0",
-  "sig": "m9hig5da/FI8dFPKkM95uVI24Aa70IOJIsjgu50pw6uP1IkyoU119JQQOdFvucJ9hCnApYJMyRWUIIr4YROxAA=="
+  "sig": "7AWwdNznKABFctq3j38Z+FCXcBX8VDD624KTIEzS8Js1qvrBl0y3rSP9otr7Tet8HUEqNEqYSYw4zN8HEI28Dw=="
 }

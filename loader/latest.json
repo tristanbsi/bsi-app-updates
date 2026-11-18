@@ -1,11 +1,11 @@
 {
   "app": "loader",
-  "version": "0.4.27",
-  "notes": "Pack it like a past gig. Open a shop order and press From a past gig… to start from a gig you've packed before: the same trucks (labels, names, load bars, straps and floor labels too) with every case this order has back in its old spot. The same physical case when the order has it, otherwise another of that type. Where the past gig had a case this order doesn't, a yellow dashed outline with its name marks the spot. Put a case there and the outline goes, or use Clear the outlines in the load panel. When the order has fewer of a type, cases come out a whole stack at a time (the top one, then…",
-  "file": "Loader-0.4.27.ldupdate",
-  "sha256": "c49bf03a0d830b1b02de3df939cd732b2dbc8f8e7cde1d2dc9769e36ae70aafb",
-  "size": 865276,
-  "released": "2026-11-18T20:31:07.631Z",
+  "version": "0.4.28",
+  "notes": "Plan the load out. Load in / Load out over the truck switches between two plans for the gig: how the trucks pack going in, and how they pack coming home (things struck in a different order, the rig coming apart its own way, or a truck emptied and refilled). The first Load out asks how to start: from the load in (every case where it went in; move what comes off differently) or empty (To pack lists every case; Pack the rest works as usual). Every truck gets its load-out twin, with the same truck, label and name; naming a truck names its twin too. The load in never changes when you work on the…",
+  "file": "Loader-0.4.28.ldupdate",
+  "sha256": "8ebb12afabd7d57eec5c61666697a2d37794353bff00fc5499bacf98047596ad",
+  "size": 871068,
+  "released": "2026-11-18T20:54:45.970Z",
   "minShell": "0.1.0",
-  "sig": "7AWwdNznKABFctq3j38Z+FCXcBX8VDD624KTIEzS8Js1qvrBl0y3rSP9otr7Tet8HUEqNEqYSYw4zN8HEI28Dw=="
+  "sig": "5znsOE/i8RsW6G6an6GO8EnnaC/oRkzFOSRHS6c2eZLHePgJqPT1fDvQ1/pVoyw0y8IjikRyEK0n/M3bugt/Dw=="
 }
